@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-VariableFont_wght.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  src: url('../assets/fonts/JosefinSans-Italic-VariableFont_wght.woff')
+    format('woff');
+}

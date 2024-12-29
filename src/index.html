@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../node_modules/material-symbols/index.css" rel="stylesheet" />
+    <link href="./styles/output.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden">
+    <header class="bg-white border border-b-tan flex items-cente">
+      <div class="w-[146px] py-[6px] pr-[15px] pl-4 grow">
+        <img
+          class="w-full h-auto"
+          src="assets/images/logo.svg"
+          alt="Becca Lago Logo"
+        />
+      </div>
+
+      <a
+        class="font-medium text-[14px] uppercase text-tan flex item-center pl-6 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px]"
+      >
+        Pedir cita
+        <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+      </a>
+      <button
+        type="button"
+        class="mr-0 ml-auto pl-3 pr-[10px] toggle-mobile-menu transition-all duration-1000"
+      >
+        <span class="material-symbols-outlined text-tan text-[40px] grow-0"
+          >menu</span
+        >
+      </button>
+    </header>
+    <main class="relative">
+      <!-- Mobile menu -->
+      <div
+        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000"
+      >
+        <nav>
+          <ul class="flex flex-col gap-x-[10px]">
+            <li class="text-white uppercase text-xl font-bold">Inicio</li>
+            <li class="text-white uppercase text-xl font-bold">Servicios</li>
+            <li class="text-white uppercase text-xl font-bold">Quien Soy</li>
+            <li class="text-white uppercase text-xl font-bold">Contacto</li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End mobile menu -->
+      <!-- hero -->
+      <section
+        class="bg-[url('../assets/images/compressed/background.webp')] text-center pt-[90px] pb-[90px] px-[15px] bg-[lenght:895px]"
+      >
+        <h1 class="text-[30px] font-medium leading-[43px] text-gray-light">
+          <span class="text-[33px] font-bold leading-[49px]"
+            >Psicóloga experta</span
+          >
+          en autoestima y dependencia emocional
+        </h1>
+      </section>
+      <div class="px-[15px] max-w-[375px] pt-[45px]">
+        <section>
+          <div class="mb-[66px]">
+            <h2 class="text-[30px] font-medium leading-normal text-gray-light">
+              Aprende a sanar tus heridas y a crear relaciones sanas
+            </h2>
+          </div>
+          <div class="relative mb-10">
+            <img
+              alt="Manos rezando con un fondo de playa"
+              src="/src/assets/images/compressed/manos.webp"
+              class="w-[172px] h-[243px] relative top-[-29px] left-[49px]"
+            />
+            <img
+              src="/src/assets/images/compressed/mesa.webp"
+              class="absolute w-[180px] h-[255px] top-0"
+            />
+          </div>
+          <div>
+            <p class="font-josefin font-light text-base mb-5">
+              ¿Repites patrones que te hacen daño? ¿Arrastras heridas de
+              relaciones pasadas que no te permiten avanzar? ¿Te cuesta
+              establecer límites y terminas en relaciones que no te valoran?
+              ¿Desarrollas dependencia emocional en tus relaciones?
+            </p>
+            <p class="font-josefin font-light text-base">
+              <span class="font-semibold">Aquí tienes un refugio</span> donde
+              aprender a sanar a tu propio ritmo.
+            </p>
+          </div>
+          <a
+            class="font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer"
+            >¿Empezamos juntas este camino?</a
+          >
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Hatton';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../assets/fonts/PPHatton-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Hatton';
+  font-weight: 500;
+  font-style: italic;
+  src: url('../assets/fonts/PPHatton-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Hatton';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../assets/fonts/PPHatton-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Hatton';
+  font-weight: 700;
+  font-sytle: normal;
+  src: url('../assets/fonts/PPHatton-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hatton';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../assets/fonts/PPHatton-Ultralight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Hatton';
+  font-style: italic;
+  font-weight: 200;
+  src: url('../assets/fonts/PPHatton-UltralightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-VariableFont_wght.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  src: url('../assets/fonts/JosefinSans-Italic-VariableFont_wght.woff')
+    format('woff');
+}
