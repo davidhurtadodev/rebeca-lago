@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  },
+  "dependencies": {
+    "material-icons": "^1.13.12",
+    "material-symbols": "^0.27.2"
+  }
+}

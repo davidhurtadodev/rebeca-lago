@@ -3,38 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link href="../node_modules/material-symbols/index.css" rel="stylesheet" />
     <link href="./styles/output.css" rel="stylesheet" />
   </head>
-  <body class="overflow-x-hidden">
-    <header class="bg-white border border-b-tan flex items-cente">
-      <div class="w-[146px] py-[6px] pr-[15px] pl-4 grow">
-        <img
-          class="w-full h-auto"
-          src="assets/images/logo.svg"
-          alt="Becca Lago Logo"
-        />
-      </div>
-
-      <a
-        class="font-medium text-[14px] uppercase text-tan flex item-center pl-6 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px]"
+  <body class="overflow-x-hidden relative">
+    <header
+      class="bg-white border border-b-tan lg:bg-transparent lg:px-[5%] lg:border-0 fixed top-0 w-full z-30 lg:border-b-[1px] header transition-all duration-300"
+    >
+      <div
+        class="lg:border-l-[1px] lg:border-r-[1px] lg:border-b-0 lg:border-tan w-full flex items-center lg:px-8 max-w-[1290px] lg:w-[89vw]"
       >
-        Pedir cita
-        <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
-      </a>
-      <button
-        type="button"
-        class="mr-0 ml-auto pl-3 pr-[10px] toggle-mobile-menu transition-all duration-1000"
-      >
-        <span class="material-symbols-outlined text-tan text-[40px] grow-0"
-          >menu</span
+        <div class="w-[46%] py-[6px] pr-[15px] pl-4 lg:w-[300px]">
+          <img
+            class="w-[146px] h-auto lg:w-[300px]"
+            src="assets/images/logo.svg"
+            alt="Becca Lago Logo"
+          />
+        </div>
+        <div class="mr-0 ml-auto self-stretch flex">
+          <nav
+            class="flex gap-x-[50px] self-stretch items-center lg:self-center"
+          >
+            <a
+              class="font-bold text-sm uppercas hidden lg:block text-tan uppercase"
+              >Inicio</a
+            >
+            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+              >Servicios</a
+            >
+            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+              >Quien soy</a
+            >
+            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+              >Contacto</a
+            >
+            <a
+              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px] lg:bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5"
+            >
+              Pedir cita
+              <span class="material-symbols-outlined text-[20px]"
+                >arrow_outward</span
+              >
+            </a>
+          </nav>
+        </div>
+        <button
+          type="button"
+          class="mr-0 pl-3 pr-[10px] toggle-mobile-menu transition-all duration-1000 lg:hidden"
         >
-      </button>
+          <span class="material-symbols-outlined text-tan text-[40px] grow-0"
+            >menu</span
+          >
+        </button>
+      </div>
     </header>
     <main class="relative">
       <!-- Mobile menu -->
       <div
-        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000"
+        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000 lg:hidden"
       >
         <nav>
           <ul class="flex flex-col gap-x-[10px]">
@@ -48,52 +80,636 @@
       <!-- End mobile menu -->
       <!-- hero -->
       <section
-        class="bg-[url('../assets/images/compressed/background.webp')] text-center pt-[90px] pb-[90px] px-[15px] bg-[lenght:895px]"
+        class="bg-[url('../assets/images/background.webp')] text-center pt-[150px] pb-[90px] px-[15px] bg-[lenght:895px] lg:bg-[url('../assets/images/background-hero.png')] lg:p-0 lg:pt-[98px]"
       >
-        <h1 class="text-[30px] font-medium leading-[43px] text-gray-light">
-          <span class="text-[33px] font-bold leading-[49px]"
-            >Psicóloga experta</span
-          >
-          en autoestima y dependencia emocional
-        </h1>
-      </section>
-      <div class="px-[15px] max-w-[375px] pt-[45px]">
-        <section>
-          <div class="mb-[66px]">
-            <h2 class="text-[30px] font-medium leading-normal text-gray-light">
-              Aprende a sanar tus heridas y a crear relaciones sanas
-            </h2>
+        <div
+          class="max-w-[1290px] lg:grid lg:grid-cols-[68%_1fr] lg:mx-auto lg:w-[89vw] lg:border-l-[1px] lg:border-r-[1px] lg:border-tan"
+        >
+          <div class="flex items-center lg:pl-12">
+            <h1
+              class="text-[30px] font-medium leading-[43px] text-gray-light lg:text-[50px] lg:font-medium lg:max-w-[745px] lg:leading-[75px] lg:text-left opacity-80"
+            >
+              <span
+                class="text-[33px] font-bold leading-[49px] lg:text-[60px] lg:font-bold lg:block lg:leading-[90px]"
+                >Psicóloga experta</span
+              >
+              en autoestima y dependencia emocional
+            </h1>
           </div>
+          <div
+            class="border-[1px] border-tan items-center justify-center pt-[35px] pb-[21px] hidden lg:flex lg:border-t-0 lg:border-r-0 lg:p-7 lg:border-b-0"
+          >
+            <image
+              class="w-[355px]"
+              src="/src/assets/images/rebeca-hero.webp"
+            />
+          </div>
+          <div
+            class="h-[116px] hidden lg:block border-t-[1px] border-tan w-full"
+          ></div>
+          <div
+            class="h-[116px] hidden lg:block border-t-[1px] border-tan w-full"
+          ></div>
+        </div>
+      </section>
+      <!-- <div class="max-w-[375px]"> -->
+      <section
+        class="pt-[45px] pb-[120px] px-[15px] bg-beige lg:pt-[116px] lg:pb-[179px]"
+      >
+        <div class="mb-[66px] lg:text-center lg:mb-[136px]">
+          <h2
+            class="text-[30px] font-medium leading-normal text-gray-light lg:text-3xl"
+          >
+            Aprende a sanar tus heridas y a crear relaciones sanas
+          </h2>
+        </div>
+        <div class="lg:flex justify-between max-w-[1290px] lg:pl-[135px]">
           <div class="relative mb-10">
             <img
               alt="Manos rezando con un fondo de playa"
-              src="/src/assets/images/compressed/manos.webp"
-              class="w-[172px] h-[243px] relative top-[-29px] left-[49px]"
+              src="/src/assets/images/manos.webp"
+              class="w-[172px] h-[243px] relative top-[-29px] left-[49px] lg:absolute lg:w-[344px] lg:h-[486px] lg:z-10"
             />
             <img
-              src="/src/assets/images/compressed/mesa.webp"
-              class="absolute w-[180px] h-[255px] top-0"
+              src="/src/assets/images/mesa.webp"
+              class="absolute w-[180px] h-[255px] top-0 lg:relative lg:w-[360px] lg:h-[509px]"
             />
           </div>
-          <div>
-            <p class="font-josefin font-light text-base mb-5">
-              ¿Repites patrones que te hacen daño? ¿Arrastras heridas de
-              relaciones pasadas que no te permiten avanzar? ¿Te cuesta
-              establecer límites y terminas en relaciones que no te valoran?
-              ¿Desarrollas dependencia emocional en tus relaciones?
+          <div class="basis-[54%]">
+            <div class="mb-5">
+              <p
+                class="font-josefin font-light text-base mb-5 text-gray-light lg:text-xl"
+              >
+                ¿Repites patrones que te hacen daño? ¿Arrastras heridas de
+                relaciones pasadas que no te permiten avanzar? ¿Te cuesta
+                establecer límites y terminas en relaciones que no te valoran?
+                ¿Desarrollas dependencia emocional en tus relaciones?
+              </p>
+              <p
+                class="font-josefin font-light text-base text-gray-light lg:text-xl"
+              >
+                <span class="font-medium">Aquí tienes un refugio</span> donde
+                aprender a sanar a tu propio ritmo.
+              </p>
+            </div>
+
+            <a
+              class="font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px]"
+              >¿Empezamos juntas este camino?</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="pt-10 lg:pt-[40px] px-[15px] mb-[62px] flex flex-col items-center"
+      >
+        <div class="w-full text-center mb-[110px] lg:mb-[50px]">
+          <h2 class="font-medium text-2xl text-gray-light lg:text-3xl">
+            ¿Quien soy?
+          </h2>
+        </div>
+        <div
+          class="bg-beige w-full pt-[356px] max-w-[345px] lg:max-w-[850px] lg:pt-[90px]"
+        >
+          <div class="px-[15px] relative lg:flex">
+            <img
+              class="w-[268px] h-auto absolute -top-[433px] mx-auto left-0 right-0 lg:w-[481px] lg:-top-[15px] lg:-left-[209px] lg:right-[unset]"
+              src="/src/assets//images/rebeca-1.webp"
+            />
+            <div class="lg:ml-[330px]">
+              <h3
+                class="font-medium text-xl mb-[30px] text-gray-light opacity-80 lg:text-2xl"
+              >
+                Psicóloga especializada en violencia de género, autoestima y
+                dependencia emocional.
+              </h3>
+              <p
+                class="font-josefin font-light text-base mb-5 text-gray-light lg:text-base"
+              >
+                Crecí rodeada de figuras femeninas fuertes que me enseñaron a
+                sanar mis propias heridas y a transformar el dolor en fortaleza.
+                Mi madre, mi abuela y otras mujeres clave en mi vida me
+                impulsaron a dedicarme a la psicología, con el deseo de
+                acompañar a quienes atraviesan los mismos desafíos.
+              </p>
+              <p
+                class="font-josefin font-light text-base mb-5 text-gray-light lg:text-base"
+              >
+                Mi motivación no viene solo de mi experiencia profesional, sino
+                también de la personal. Entiendo el sufrimiento que traen
+                consigo las heridas emocionales, la falta de autoestima y la
+                dependencia emocional, porque
+                <span class="font-medium"
+                  >yo misma he transitado esos caminos.</span
+                >
+              </p>
+              <p
+                class="font-josefin font-light text-base mb-5 text-gray-light lg:text-base"
+              >
+                Por eso, aquí, quiero ofrecerte las herramientas para que puedas
+                hacer lo mismo:
+
+                <span class="font-medium"
+                  >sanar tus heridas, empoderarte y vivir una vida plena.</span
+                >
+              </p>
+              <a
+                class="font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer text=gray-light mb-[52px]"
+                >Conoce mejor mi historia y trayectoria</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mx-[15px] mb-[84px] flex flex-col items-center">
+        <div class="w-full text-center">
+          <h2
+            class="text-2xl font-medium text-gray-light mb-[112px] lg:text-[40px]"
+          >
+            Cómo me gusta trabajar
+          </h2>
+        </div>
+        <div class="lg:flex lg:flex-row-reverse lg:gap-x-[87px]">
+          <div
+            class="relative mb-11 h-[410px] w-full lg:w-[463px] lg:h-[592px] lg:mb-[54px]"
+          >
+            <img
+              alt="Manos rezando con un fondo de playa"
+              src="/src/assets/images/playa.webp"
+              class="w-[289px] h-[410px] absolute top-[-69px] right-0 lg:w-[390px] lg:h-[552px] lg:-top-[93px]"
+            />
+            <img
+              src="/src/assets/images/manos-2.webp"
+              class="absolute w-[262px] h-[370px] top-0 lg:w-[353px] lg:h-[499px]"
+            />
+          </div>
+          <div class="mb-[153px] lg:w-[467px]">
+            <p
+              class="font-josefin font-light text-base mb-5 text-gray-light lg:text-base"
+            >
+              Mi enfoque es siempre personalizado, adaptado a cada mujer y a sus
+              vivencias únicas. Como psicóloga, creo en la importancia de
+              escuchar, comprender y acompañar en cada paso.
             </p>
-            <p class="font-josefin font-light text-base">
-              <span class="font-semibold">Aquí tienes un refugio</span> donde
-              aprender a sanar a tu propio ritmo.
+            <p
+              class="font-josefin font-light text-base mb-[71px] text-gray-light lg:text-base"
+            >
+              Trabajo desde la psicoterapia integradora, basándome en técnicas
+              como la Terapia Cognitivo Conductual (TCC) y la ACT, pero más allá
+              de ellas,
+              <span class="font-medium">
+                me importa lo que realmente funciona para ti.</span
+              >
             </p>
           </div>
-          <a
-            class="font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer"
-            >¿Empezamos juntas este camino?</a
+        </div>
+        <div class="lg:flex lg:gap-x-[114px]">
+          <div class="relative mb-11">
+            <img
+              src="/src/assets/images/rectangle-empty-2.svg"
+              class="w-[345px] h-[487px] relative top-[-82px] right-0 lg:w-[390px] lg:h-[552px] lg:-left-[42px]"
+            />
+            <img
+              src="/src/assets/images/reloj.webp"
+              class="absolute w-[311px] h-[440px] top-0 right-0 lg:w-[353px] lg:h-[499px]"
+            />
+          </div>
+          <div class="lg:w-[582px]">
+            <p
+              class="font-josefin font-light text-base mb-[71px] text-gray-light lg:mb-[20px]"
+            >
+              Mi objetivo es ofrecerte las herramientas necesarias, que a ti te
+              funcionen para tus propias heridas. A través de la empatía y el
+              autoconocimiento
+              <span class="font-medium">
+                te guiaré para que puedas transformar tus desafíos en
+                fuerzas</span
+              >
+              que te lleven a ser la mejor versión de ti misma.
+            </p>
+            <p class="font-josefin font-light text-base text-gray-light">
+              Como psicóloga especializada en violencia de género, autoestima,
+              dependencia emocional y empoderamiento femenino, acompaño a
+              mujeres como tú a r
+              <span class="font-medium">
+                romper con los patrones que las mantienen atrapadas en
+                relaciones tóxicas y de dependencia.</span
+              >
+              Si sientes que tu autoestima ha tocado fondo, que repites ciclos
+              de relaciones que te hacen daño, y anhelas un cambio profundo en
+              tu vida, estoy aquí para guiarte en tu proceso de sanar al
+              entender tu herida. 
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-tan-light pt-[70px] flex flex-col items-center pb-[158px]"
+      >
+        <h2 class="text-white font-medium text-2xl mb-10 lg:text-3xl lg:mb-6">
+          Te puedo ayudar si...
+        </h2>
+        <div class="hidden lg:block lg:mb-12 max-w-[949px] mx-auto text-center">
+          <p class="text-xl font-light text-white">
+            Sé lo difícil que es sentirse atrapada en ciclos de dolor y
+            relaciones tóxicas. Pero, ¿sabes cuál es la buena noticia? No tienes
+            que enfrentarte sola a ello. 
+          </p>
+        </div>
+
+        <div class="mx-[15px] gap-y-8 flex flex-col lg:w-full lg:px-[67px]">
+          <div
+            class="bg-beige pl-[15px] pr-[10px] pt-[25px] pb-[30px] lg:w-[740px] lg:pt-10 lg:pl-12 lg:pr-20 lg:relative lg:self-start"
           >
-        </section>
-      </div>
+            <img
+              src="/src/assets/images/cama.webp"
+              class="hidden lg:block absolute w-[544px] h-auto left-[680px]"
+            />
+            <div class="flex gap-x-[10px] mb-5">
+              <span
+                class="material-symbols-outlined text-[40px] text-tan lg:text-[50px]"
+                >cardio_load</span
+              >
+              <h3
+                class="text-xl font-medium opacity-80 text-gray-light lg:text-2xl lg:opacity-100"
+              >
+                Aquí tienes un refugio si...
+              </h3>
+            </div>
+
+            <ul class="flex flex-col gap-y-5 mb-[30px]">
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Te sientes atrapada en una relación que te hace daño.
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Has perdido la confianza en ti misma y no sabes cómo
+                recuperarla.
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Te cuesta establecer límites y terminas en relaciones que no te
+                valoran.
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Quieres sanar heridas del pasado y construir una vida más
+                saludable y plena.
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Estás lista para invertir en ti misma y en tu bienestar
+                emocional.
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Quieres aprender a hablarte mejor, cuidar el jardín de tus
+                pensamientos y salir de los bucles de pensamientos negativos. 
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Te sientes atrapada en una relación narcisista y quieres
+                entender qué te llevó a ella, y que te mantiene allí. 
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Quieres entender por qué encadenas relaciones tóxicas cómo
+                romper con esos vínculos traumáticos. 
+              </li>
+            </ul>
+            <div class="w-full text-center lg:text-left">
+              <a
+                class="text-sm font-medium uppercase text-tan underline cursor-pointer lg:hidden"
+                >Ver más</a
+              >
+              <p
+                class="hidden lg:block text-2xl font-josefin font-light text-gray-light leading-[30px]"
+              >
+                ¿Te sientes identificada? Entonces es hora de
+                <span class="underline text-tan-light">empezar a cambiar.</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-beige pl-[15px] pr-[10px] pt-[25px] pb-[30px] lg:w-[740px] lg:pt-10 lg:pl-[104px] lg:pr-[62px] lg:self-end lg:relative"
+          >
+            <img
+              src="/src/assets/images/cuaderno.webp"
+              class="hidden lg:block w-[612px] h-auto -left-[550px] absolute top-[98px]"
+            />
+            <div class="flex gap-x-[10px] mb-5">
+              <span
+                class="material-symbols-outlined text-[40px] text-tan lg:text-[50px]"
+                >diversity_2</span
+              >
+              <h3
+                class="text-xl font-medium opacity-80 text-gray-light lg:opacity-100 lg:text-2xl"
+              >
+                Juntas podemos trabajar para...
+              </h3>
+            </div>
+
+            <ul class="flex flex-col gap-y-5 mb-[30px]">
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Sanar heridas emocionales.
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Reparar la autoestima.
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Romper ciclos de dependencia emocional
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Gestionar relaciones difíciles
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Aprender a establecer límites
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Priorizarte a tí misma
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+              >
+                Salir del bucle de pensamientos negativos
+              </li>
+            </ul>
+            <div
+              class="w-full text-center flex flex-col gap-y-[30px] lg:text-left"
+            >
+              <a
+                class="text-sm font-medium uppercase text-tan underline cursor-pointer lg:hidden"
+                >Ver más</a
+              >
+              <p
+                class="hidden lg:block text-2xl font-josefin font-light text-gray-light leading-[30px]"
+              >
+                Estoy aquí para acompañarte en tu camino de transformación.
+              </p>
+              <a
+                class="font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5"
+                >Quiero empezar</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials -->
+      <section
+        class="text-center bg-[url('../assets/images/background-testimonial-mobile.webp')] pt-14 pb-16"
+      >
+        <div class="max-w-[345px] text-center mx-auto">
+          <h2 class="text-gray-light opacity-80 font-medium text-2xl mb-6">
+            Testimonios
+          </h2>
+          <h3 class="font-josefin font-light text-base text-gray-light mb-5">
+            Esto es lo que dicen algunas mujeres como tú...
+          </h3>
+        </div>
+
+        <div class="swiper swiper-mobile lg:hidden w-full h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  No sabía cómo poner límites y siempre terminaba en relaciones
+                  tóxicas. El taller de autoestima me enseñó a reconocer mi
+                  valor y a no conformarme con menos de lo que merezco. Hoy, soy
+                  mi prioridad y no me siento culpable al establecer límites.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    A
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Ana, 29 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto h-[430px]"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination relative mt-[30px]"></div>
+        </div>
+        <div class="swiper swiper-desktop hidden lg:flex w-full h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto lg:w-[519px] lg:h-[308px]"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto lg:w-[519px] lg:h-[308px]"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto h-[430px] lg:w-[519px] lg:h-[308px]"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80"
+                >
+                  No sabía cómo poner límites y siempre terminaba en relaciones
+                  tóxicas. El taller de autoestima me enseñó a reconocer mi
+                  valor y a no conformarme con menos de lo que merezco. Hoy, soy
+                  mi prioridad y no me siento culpable al establecer límites.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Ana, 29 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination relative mt-[30px]"></div>
+        </div>
+      </section>
+      <!-- </div> -->
     </main>
+    <footer class="pt-5 pb-3">
+      <div class="px-[15px] w-full flex flex-col items-center">
+        <img
+          src="/src/assets/images/logo-minus.svg"
+          class="w-[54px] h-auto mb-[18px]"
+        />
+        <div class="flex w-full items-center">
+          <hr class="grow border-tan-light" />
+          <div class="flex gap-x-5 items-center ml-[22px] mr-[13px]">
+            <a
+              class="w-[25px] h-[25px] bg-[url('../assets/images/instagram.svg')] block"
+            >
+            </a>
+            <a class="flex">
+              <span class="material-symbols-outlined text-[34px] text-tan-light"
+                >mail</span
+              >
+            </a>
+          </div>
+          <hr class="grow border-tan-light" />
+        </div>
+        <div class="flex gap-5">
+          <a class="font-josefin font-light text-[14px] text-tan-light"
+            >Política de Privacidad</a
+          >
+          <a class="font-josefin font-light text-[14px] text-tan-light"
+            >Política de Privacidad</a
+          >
+        </div>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

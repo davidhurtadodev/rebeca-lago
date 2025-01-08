@@ -38,12 +38,53 @@
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
-  src: url('../assets/fonts/JosefinSans-VariableFont_wght.woff') format('woff');
+  src: url('../assets/fonts/JosefinSans-Thin.ttf') format('woff');
+  font-weight: 100;
 }
 
 @font-face {
   font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-Medium.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  src: url('../assets/fonts/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* @font-face {
+  font-family: 'Josefin Sans';
   font-style: italic;
   src: url('../assets/fonts/JosefinSans-Italic-VariableFont_wght.woff')
-    format('woff');
-}
+      format('woff supports variations'),
+    url('../assets/fonts/JosefinSans-Italic-VariableFont_wght.woff')
+      format('woff-variations');
+  font-weight: 100 1000;
+} */
