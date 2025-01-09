@@ -97,6 +97,12 @@
 
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px];
+  }
+}
+
 .swiper-pagination-bullet {
   background: transparent;
   border: solid 1px #c88d76;

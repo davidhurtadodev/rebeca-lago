@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="../node_modules/material-symbols/index.css" rel="stylesheet" />
+    <link href="./styles/output.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden relative">
+    <header
+      class="bg-white border border-b-tan lg:bg-transparent lg:px-[5%] lg:border-0 fixed top-0 w-full z-30 lg:border-b-[1px] header transition-all duration-300"
+    >
+      <div
+        class="lg:border-l-[1px] lg:border-r-[1px] lg:border-b-0 lg:border-tan w-full flex items-center lg:px-8 max-w-[1290px] lg:w-[89vw]"
+      >
+        <div class="w-[46%] py-[6px] pr-[15px] pl-4 lg:w-[300px]">
+          <img
+            class="w-[146px] h-auto lg:w-[300px]"
+            src="assets/images/logo.svg"
+            alt="Becca Lago Logo"
+          />
+        </div>
+        <div class="mr-0 ml-auto self-stretch flex">
+          <nav
+            class="flex gap-x-[50px] self-stretch items-center lg:self-center"
+          >
+            <a
+              class="font-bold text-sm uppercas hidden lg:block text-tan uppercase"
+              >Inicio</a
+            >
+            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+              >Servicios</a
+            >
+            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+              >Quien soy</a
+            >
+            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+              >Contacto</a
+            >
+            <a
+              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px] lg:bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5 hover:bg-tan-hover"
+            >
+              Pedir cita
+              <span class="material-symbols-outlined text-[20px]"
+                >arrow_outward</span
+              >
+            </a>
+          </nav>
+        </div>
+        <button
+          type="button"
+          class="mr-0 pl-3 pr-[10px] toggle-mobile-menu transition-all duration-1000 lg:hidden"
+        >
+          <span class="material-symbols-outlined text-tan text-[40px] grow-0"
+            >menu</span
+          >
+        </button>
+      </div>
+    </header>
+    <main class="relative">
+      <!-- Mobile menu -->
+      <!-- <div
+        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000 lg:hidden"
+      >
+        <nav>
+          <ul class="flex flex-col gap-x-[10px]">
+            <li class="text-white uppercase text-xl font-bold">Inicio</li>
+            <li class="text-white uppercase text-xl font-bold">Servicios</li>
+            <li class="text-white uppercase text-xl font-bold">Quien Soy</li>
+            <li class="text-white uppercase text-xl font-bold">Contacto</li>
+          </ul>
+        </nav>
+      </div> -->
+      <!-- End mobile menu -->
+      <!-- hero -->
+      <section
+        class="lg:pt-[98px] max-w-[1290px] lg:grid lg:grid-cols-[68%_1fr] lg:mx-auto lg:w-[89vw] flex flex-col px-[15px] lg:px-0 mx-auto lg:mb-[156px] mb-[50px]"
+      >
+        <div class="mt-[162px] grow-0 lg:max-w-[650px] max-w-[345px] mx-auto">
+          <h1 class="text-4xl opacity-80 lg:mb-[14px] text-gray-dark mb-5">
+            Rebeca Lago
+          </h1>
+          <div class="relative mt-[69px] grow lg:hidden ml-10 mb-20">
+            <img
+              class="w-[166px] h-auto"
+              src="/src/assets//images/rectangle-empty.svg"
+            />
+            <img
+              class="w-[178px] h-auto absolute -left-10 top-[16px]"
+              src="/src//assets//images/quien-soy-mobile.webp"
+            />
+          </div>
+          <div class="flex gap-x-[10px] mb-5">
+            <span
+              class="material-symbols-outlined text-[30px] text-tan lg:text-[30px] lg:mt-2"
+              >diagnosis</span
+            >
+            <h3
+              class="text-base font-medium opacity-80 text-gray-light lg:text-2xl lg:opacity-100"
+            >
+              Psicóloga especializada en autoestima y dependencia emocional
+            </h3>
+          </div>
+          <div class="flex gap-x-[10px] mb-5">
+            <span
+              class="material-symbols-outlined text-[30px] text-tan lg:text-[30px] lg:mt-2"
+              >book_2</span
+            >
+            <h3
+              class="text-base font-medium opacity-80 text-gray-light lg:text-2xl lg:opacity-100"
+            >
+              Escritora y divulgadora
+            </h3>
+          </div>
+          <div>
+            <p
+              class="text-xl font-josefin text-gray-light font-light hidden lg:block"
+            >
+              <span class="font-medium">Número de colegiada:</span> B-03604
+            </p>
+          </div>
+        </div>
+        <div class="relative mt-[69px] grow hidden lg:block">
+          <img
+            class="lg:w-[328px] h-auto"
+            src="/src/assets//images/rectangle-empty.svg"
+          />
+          <img
+            class="lg:w-[355px] h-auto absolute lg:-left-[80px] lg:top-[32px]"
+            src="/src//assets//images/rebeca-quien-soy.webp"
+          />
+        </div>
+      </section>
+      <section class="text-center w-full px-[15px] lg:mb-[107px] mb-10">
+        <h2 class="lg:text-3xl lg:mb-7 text-gray-light mb-[128px] text-2xl">
+          Mi historia
+        </h2>
+        <div
+          class="bg-beige lg:pl-12 lg:pr-9 lg:max-w-[1070px] lg:w-[74vw] w-full pt-[187px] lg:pt-[100px] pb-[64px] mx-auto px-[15px] max-w-[345px]"
+        >
+          <div class="flex justify-end relative lg:mb-[179px] mb-[361px]">
+            <img
+              class="lg:h-auto lg:w-[458px] lg:absolute lg:-left-[120px] w-[257px] -top-[253px] h-[223px] absolute left-0 right-0 mx-auto lg:top-0 lg:right-auto"
+              src="assets/images/playa2.webp"
+            />
+
+            <div class="lg:w-[55%] text-left">
+              <h3 class="text-gray-dark font-medium lg:text-2xl mb-5 text-xl">
+                Mi entorno femenino me inspiró desde pequeña
+              </h3>
+              <p class="font-josefin text-base mb-5 font-light text-gray-light">
+                Desde pequeña, crecí rodeada de mujeres fuertes y sabias, como
+                mi madre y mi abuela, quienes marcaron profundamente mi camino.
+                Ellas me enseñaron que la fortaleza no significa no tener
+                heridas, sino aprender a sanar y crecer a partir de ellas. Y así
+                aprendí a transformar mis debilidades en fortalezas, mis
+                cicatrices en alas.
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-gray-light">
+                Fue este entorno el que me inspiró a estudiar psicología y a
+                dedicarme al acompañamiento de otras mujeres que, como yo, han
+                atravesado dolores emocionales, pérdidas o traumas que las hacen
+                sentirse perdidas o atrapadas en patrones dañinos.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-start relative lg:mb-[100px]">
+            <img
+              class="lg:h-[470px] lg:w-[456px] lg:absolute w-[270px] h-[278px] absolute mx-auto lg:-right-[118px] left-0 right-0 -top-[308px] lg:top-0 lg:left-auto"
+              src="assets/images/rosa.webp"
+            />
+
+            <div class="lg:w-[55%] text-left">
+              <h3 class="text-gray-dark font-medium lg:text-2xl mb-5 text-xl">
+                Las heridas pueden transformarse en fuerza
+              </h3>
+              <p class="font-josefin text-base mb-5 font-light text-gray-light">
+                A lo largo de mi vida he tenido la suerte de toparme con
+                personas que me han mostrado que las heridas pueden
+                transformarse en fuerza. Fue esta experiencia personal la que me
+                llevó a
+                <span class="font-normal"
+                  >especializarme en áreas como la autoestima, la dependencia
+                  emocional y la violencia de género dentro de la
+                  psicología.</span
+                >
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-gray-light">
+                Desde que decidí emprender este camino, entendí que mi misión
+                era
+                <span class="font-normal"
+                  >ayudar a las personas a reconocer su propio poder, a sanar
+                  sus heridas y a recuperar la confianza perdida</span
+                >, a hablarte mejor y a tratarte con mayor autocompasión, a
+                empoderarte y convertirte en tu propia protagonista.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-end relative flex-col lg:flex-row">
+            <div
+              class="border-[1px] border-tan text-left lg:w-[440px] lg:absolute lg:pl-[120px] lg:pt-[51px] lg:pb-[43px] lg:-left-[120px] relative pt-[51px] pl-[15px] pb-[43px] lg:h-auto w-[315px] mb-[50px] lg:mb-0"
+            >
+              <img
+                class="w-[49px] h-auto absolute -top-[10px]"
+                src="assets/images/comillas.svg"
+              />
+              <p class="font-medium text-xl text-tan">
+                Lo que aprendí de mis propios desafíos, hoy lo comparto con cada
+                mujer que llega a mi consulta
+              </p>
+            </div>
+
+            <div class="lg:w-[55%] text-left">
+              <p class="font-josefin text-base mb-5 font-light text-gray-light">
+                Y es que
+                <span class="font-normal"
+                  >cuando conoces la causa, puedes empezar a sanarla.</span
+                >
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-gray-light">
+                Es un viaje que no solo acompaña a mis pacientes, sino que
+                también es profundamente mío, propio.
+                <span class="font-normal"
+                  >Lo que aprendí de mis propios desafíos, hoy lo comparto con
+                  cada mujer que llega a mi consulta</span
+                >
+                . Transformar el dolor en fortaleza no es solo un concepto con
+                el que me gusta trabajar, es una vivencia que llevo en mi piel y
+                que quiero que todas las mujeres experimenten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-tan-light lg:pt-[75px] lg:pb-[100px] pt-[36px] px-[15px] lg:px-0 pb-[50px]"
+      >
+        <div class="max-w-[940px] mx-auto text-center">
+          <h2 class="lg:text-3xl text-white mb-6 text-2xl">Mi formación</h2>
+        </div>
+        <div
+          class="lg:px-[110px] lg:gap-y-[160px] lg:flex lg:flex-col max-w-[330px] lg:max-w-fit mx-auto"
+        >
+          <div
+            class="flex justify-between flex-col-reverse lg:flex-row mb-[30px] lg:mb-0"
+          >
+            <div class="max-w-[662px]">
+              <h3 class="lg:text-2xl lg:mb-2 text-white text-xl mb-7">
+                De Palma a Florencia
+              </h3>
+              <p class="font-josefin text-base mb-5 font-light text-white">
+                Mi viaje en la psicología comenzó en la Universidad de las Islas
+                Baleares (UIB), donde obtuve mi título en Psicología, pero
+                realmente fue mi experiencia en el extranjero, durante un
+                intercambio Erasmus en la Universidad de Florencia, la que fue
+                una de las experiencias más enriquecedoras de mi vida.
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-white">
+                Allí, sumergida en una cultura diferente, descubrí nuevas formas
+                de entender el ser humano y la mente, algo que me enriqueció
+                profundamente y me ayudó a ver la psicología desde una
+                perspectiva más amplia.
+              </p>
+            </div>
+            <div
+              class="relative flex justify-end w-full mb-[88px] lg:mb-0 lg:grow-0 lg:w-fit"
+            >
+              <div
+                class="bg-transparent border-[1px] border-white lg:w-[334px] lg:h-[317px] absolute lg:-left-[118px] lg:top-[79px] w-[249px] h-[236px] left-0 top-[58px]"
+              ></div>
+              <img
+                class="lg:w-[344px] w-[256px]"
+                src="assets/images/manos-rezando-quien-soy.webp"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between lg:flex-row-reverse flex-col-reverse mb-[30px] lg:mb-0"
+          >
+            <div class="max-w-[662px]">
+              <h3 class="lg:text-2xl lg:mb-2 text-white text-xl mb-7">
+                Mi experiencia como psicóloga
+              </h3>
+              <p class="font-josefin text-base mb-5 font-light text-white">
+                Durante mis estudios y prácticas, especialmente en Las Ovejas de
+                Mica, un centro especializado en la rehabilitación de
+                alcoholismo, toqué la realidad con las manos. Fue allí donde
+                comprendí, por primera vez, el verdadero impacto de las heridas
+                emocionales y las adicciones en la vida de las personas. 
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-white">
+                A lo largo de los años, he seguido formándome en diversos campos
+                como la violencia de género, las prácticas feministas y la
+                psicología positiva. Mi máster en Psicología General Sanitaria
+                me permitió profundizar en el campo de la salud mental,
+                realizando un trabajo de fin de máster sobre la relación entre
+                afecto positivo y trastornos de ansiedad.
+              </p>
+            </div>
+            <div class="relative">
+              <img
+                class="lg:w-[438px] w-[281px] h-auto relative lg:-left-[75px] mb-7 lg:mb-0"
+                src="assets/images/cafe-quien-soy.webp"
+              />
+            </div>
+          </div>
+          <div class="flex lg:flex-row justify-between flex-col-reverse">
+            <div class="max-w-[662px]">
+              <p class="font-josefin text-base mb-5 font-light text-white">
+                Además, en la Fundación IRES, donde actualmente trabajo, he
+                tenido la oportunidad de realizar terapias grupales centradas en
+                la violencia de género y autoestima, lo que me ha permitido
+                conectar más profundamente con las mujeres que atraviesan
+                situaciones difíciles y darme cuenta del impacto que tienen las
+                relaciones en la vida de las personas.
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-white">
+                Esta experiencia es la que me ha impulsado a especializarme en
+                el ámbito de la autoestima y la dependencia emocional, áreas
+                donde siento que puedo aportar una verdadera transformación.
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-white">
+                Mi formación continua está siempre alineada con el objetivo de
+                proporcionar herramientas efectivas y adecuadas a cada persona,
+                de manera que puedan sanar y crecer, tal como lo hice yo.
+              </p>
+              <a
+                class="font-medium text-sm uppercase text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px] w-fit px-5 hover:bg-tan-hover"
+                >Ver toda mi información</a
+              >
+            </div>
+            <div class="relative w-full h-[247px] mb-[34px] lg:mb-0">
+              <div
+                class="bg-transparent border-[1px] border-white lg:w-[334px] lg:h-[317px] w-[260px] h-[247px] absolute right-0 lg:top-[100px]"
+              ></div>
+              <img
+                class="lg:w-[353px] lg:h-[318px] absolute lg:top-10 w-[275px] h-[248px] -top-[32px] left-0 lg:left-auto lg:right-[89px]"
+                src="assets/images/camara-playa-quien-soy.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-white lg:pt-[75px] lg:pb-[100px] pt-[36px] px-[15px] w-full lg:px-0 pb-[50px] max-w-[375px] lg:max-w-[fit-content] mx-auto mb-[59px] lg:mb-[160px]"
+      >
+        <div class="max-w-[940px] mx-auto text-center">
+          <h2 class="lg:text-3xl gray-dark mb-6 text-2xl text-gray-dark">
+            Beccalagostudio
+          </h2>
+        </div>
+        <div class="lg:px-[110px] lg:flex lg:flex-col">
+          <div
+            class="flex justify-between flex-col lg:flex-row mb-[30px] lg:mb-[84px]"
+          >
+            <div class="max-w-[662px]">
+              <h3 class="lg:text-2xl lg:mb-2 text-gray-dark text-xl mb-7">
+                Cómo nació mi proyecto
+              </h3>
+              <p class="font-josefin text-base mb-5 font-light text-gray-dark">
+                Decidí emprender en 2020, un año que, aunque desafiante para
+                muchos, en mi caso me dio el tiempo y el espacio necesarios para
+                dedicarme plenamente a mis proyectos personales. Así nació
+                Beccalagostudio, un lugar donde fusiono mi pasión por la
+                escritura con mi afán de empoderar a las mujeres.
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-gray-dark">
+                Decidí emprender no solo para encontrar independencia, sino para
+                ganar la libertad de crear, escribir y ayudar desde un espacio
+                propio, sin barreras. Emprender me ha permitido conectar con la
+                escritura, un recurso que es tanto un medio de sanación para mí
+                como una herramienta de cambio para quienes me leen.
+              </p>
+            </div>
+            <div
+              class="relative w-full lg:mb-0 lg:grow-0 lg:w-fit border-[1px] border-tan lg:pt-[51px] lg:pl-[80px] lg:pr-10 self-baseline pb-10 max-w-[440px] lg:mt-12 pt-[51px] pl-[23px] mb-8"
+            >
+              <img
+                class="w-[49px] h-auto absolute -top-[10px] lg:left-[80px]"
+                src="assets/images/comillas.svg"
+              />
+              <p class="font-medium text-xl text-gray-light max-w">
+                un lugar donde fusiono mi pasión por la escritura con mi afán de
+                empoderar a las mujeres.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-between lg:flex-row-reverse flex-col mb-[30px] lg:mb-[160px]"
+          >
+            <div class="max-w-[662px] mb-5 lg:mb-0">
+              <p class="font-josefin text-base mb-5 font-light text-gray-dark">
+                Para mí, la escritura es un proceso de autocuidado, de conexión
+                conmigo misma, de ordenar emociones, sentimientos, pensamientos
+                y vivencias. Es una forma de transformar en alas mis cicatrices
+                emocionales. Por eso en mi perfil @beccalago.art comparto
+                frases, píldoras de bienestar, que hablan sobre resiliencia y
+                empoderamiento, dos de mis palabras faro.
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-gray-dark">
+                En el sector de la psicología, me di cuenta de que, aunque
+                muchas mujeres buscaban ayuda, había una falta de enfoque
+                integral y humano en los tratamientos, algo que me impulsó a
+                crear un enfoque más personalizado y cercano. Mi trabajo no se
+                basa solo en la teoría, sino en la empatía, la experiencia
+                personal y la conexión genuina con cada paciente.
+              </p>
+            </div>
+            <div class="relative lg:w-[463px] mb-10 lg:mb-0">
+              <div
+                class="bg-transparent border-[1px] border-tan lg:w-[388px] lg:h-[351px] w-[260px] h-[247px] right-0 absolute"
+              ></div>
+              <img
+                class="lg:w-[353px] lg:h-[318px] w-[275px] h-[248px] left-0 lg:left-auto lg:right-[89px] lg:absolute lg:top-[59px] relative top-[43px]"
+                src="assets/images/mesa-quien-soy.webp"
+              />
+            </div>
+          </div>
+
+          <div class="flex lg:flex-row justify-between flex-col">
+            <div class="max-w-[662px]">
+              <h3 class="lg:text-2xl lg:mb-2 text-gray-dark text-xl mb-7">
+                Mis pilares fundamentales: resiliencia y empoderamiento
+              </h3>
+              <p class="font-josefin text-base mb-5 font-light text-gray-dark">
+                Estas son las bases de mi trabajo y de la filosofía que intento
+                transmitir a todas las personas con las que trato. No se trata
+                solo de “superar” el dolor, sino de transformarlo, aprender de
+                él y crear una nueva versión de nosotras mismas más fuerte y
+                consciente de nuestro verdadero poder.
+              </p>
+              <p class="font-josefin text-base mb-5 font-light text-gray-dark">
+                Por eso este viaje ha de ser diferente para cada una. Cada
+                persona que llega a mi consulta no es solo un “paciente”, sino
+                alguien con una historia, un ser único que necesita ser
+                escuchado y acompañado en su proceso de sanación.
+              </p>
+            </div>
+            <div class="relative w-full h-[247px] mb-[34px] lg:mb-0">
+              <img
+                class="lg:w-[353px] lg:h-[318px] lg:absolute lg:top-10 w-[275px] h-[248px] lg:left-auto lg:right-[89px] relative"
+                src="assets/images/manos2.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="max-w-[940px] mx-auto text-center mb-8">
+          <h2 class="lg:text-3xl gray-dark mb-6 text-2xl text-gray-dark">
+            Sígueme en Instagram
+          </h2>
+        </div>
+        <div class="max-w-[1070px] mx-auto">
+          <details
+            class="border-[1px] py-6 px-4 border-tan group"
+            name="accordion"
+          >
+            <summary
+              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-0 cursor-pointer group-open:after:rotate-45"
+            >
+              Formación
+            </summary>
+            <p class="mt-5 font-josefin font-light text-base text-gray-light">
+              Requires 40 credits, including a passing grade in health,
+              geography, history, economics, and wood shop.
+            </p>
+          </details>
+          <details name="accordion">
+            <summary>Cursos</summary>
+            <ul>
+              <li>
+                Cursos de formación en igualdad de género – Agora Espacio de
+                formación feminista (2018-2019)
+              </li>
+            </ul>
+          </details>
+          <details name="accordion">
+            <summary>Experiencia</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              magni quos porro illo sunt perspiciatis laudantium minima, neque
+              id nostrum rem ea corrupti veritatis exercitationem minus tempore
+              distinctio, eligendi accusamus vel ducimus dicta maiores officiis!
+              Voluptas aspernatur magnam eligendi quae?
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-5 pb-3">
+      <div class="px-[15px] w-full flex flex-col items-center">
+        <img
+          src="/src/assets/images/logo-minus.svg"
+          class="w-[54px] h-auto mb-[18px]"
+        />
+        <div class="flex w-full items-center">
+          <hr class="grow border-tan-light" />
+          <div class="flex gap-x-5 items-center ml-[22px] mr-[13px]">
+            <a
+              class="w-[25px] h-[25px] bg-[url('../assets/images/instagram.svg')] block"
+            >
+            </a>
+            <a class="flex">
+              <span class="material-symbols-outlined text-[34px] text-tan-light"
+                >mail</span
+              >
+            </a>
+          </div>
+          <hr class="grow border-tan-light" />
+        </div>
+        <div class="flex gap-5">
+          <a class="font-josefin font-light text-[14px] text-tan-light"
+            >Política de Privacidad</a
+          >
+          <a class="font-josefin font-light text-[14px] text-tan-light"
+            >Política de Privacidad</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
