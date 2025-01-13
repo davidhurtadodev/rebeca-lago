@@ -44,7 +44,7 @@
               >Contacto</a
             >
             <a
-              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px] lg:bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5 hover:bg-tan-hover"
+              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px] lg:bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5 hover:bg-tan-hover hover:text-white"
             >
               Pedir cita
               <span class="material-symbols-outlined text-[20px]"
@@ -55,9 +55,10 @@
         </div>
         <button
           type="button"
-          class="mr-0 pl-3 pr-[10px] toggle-mobile-menu transition-all duration-1000 lg:hidden"
+          class="mr-0 pl-3 pr-[10px] toggle-mobile-menu group lg:hidden hover:text-white hover:bg-tan self-stretch"
         >
-          <span class="material-symbols-outlined text-tan text-[40px] grow-0"
+          <span
+            class="material-symbols-outlined text-tan text-[40px] grow-0 group-hover:text-white"
             >menu</span
           >
         </button>
@@ -89,11 +90,11 @@
           <div class="relative mt-[69px] grow lg:hidden ml-10 mb-20">
             <img
               class="w-[166px] h-auto"
-              src="/src/assets//images/rectangle-empty.svg"
+              src="/assets/images/rectangle-empty.svg"
             />
             <img
               class="w-[178px] h-auto absolute -left-10 top-[16px]"
-              src="/src//assets//images/quien-soy-mobile.webp"
+              src="/assets/images/quien-soy-mobile.webp"
             />
           </div>
           <div class="flex gap-x-[10px] mb-5">
@@ -392,7 +393,7 @@
             </div>
           </div>
           <div
-            class="flex justify-between lg:flex-row-reverse flex-col mb-[30px] lg:mb-[160px]"
+            class="flex justify-between lg:flex-row-reverse flex-col mb-[30px] lg:mb-[160px] lg:gap-x-[100px]"
           >
             <div class="max-w-[662px] mb-5 lg:mb-0">
               <p class="font-josefin text-base mb-5 font-light text-gray-dark">
@@ -457,41 +458,164 @@
             Sígueme en Instagram
           </h2>
         </div>
-        <div class="max-w-[1070px] mx-auto">
-          <details
-            class="border-[1px] py-6 px-4 border-tan group"
-            name="accordion"
-          >
+        <div
+          class="max-w-[1070px] mx-auto flex flex-col gap-y-8 lg:mb-[90px] px-[15px] lg:px-0 mb-12"
+        >
+          <details class="border-[1px] border-tan group" name="accordion">
             <summary
-              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-0 cursor-pointer group-open:after:rotate-45"
+              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-7 cursor-pointer group-open:after:-rotate-45 after:transition-all py-6 px-4"
             >
               Formación
             </summary>
-            <p class="mt-5 font-josefin font-light text-base text-gray-light">
-              Requires 40 credits, including a passing grade in health,
-              geography, history, economics, and wood shop.
-            </p>
+            <div class="py-6 px-4 pt-0">
+              <p class="font-josefin font-light text-base text-gray-light">
+                Requires 40 credits, including a passing grade in health,
+                geography, history, economics, and wood shop.
+              </p>
+            </div>
           </details>
-          <details name="accordion">
-            <summary>Cursos</summary>
-            <ul>
-              <li>
-                Cursos de formación en igualdad de género – Agora Espacio de
-                formación feminista (2018-2019)
-              </li>
-            </ul>
+          <details class="border-[1px] border-tan group" name="accordion">
+            <summary
+              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-7 cursor-pointer group-open:after:-rotate-45 after:transition-all py-6 px-4"
+            >
+              Cursos
+            </summary>
+            <div class="py-6 px-4 pt-0">
+              <div class="">
+                <ul class="flex flex-col gap-y-5 mb-[30px]">
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+                  >
+                    Cursos de formación en igualdad de género – Agora Espacio de
+                    formación feminista (2018-2019)
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+                  >
+                    Programa Aceleradora para potenciar el Emprendimiento – Ifoc
+                    Calvià (2021-2022)
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+                  >
+                    Programa Marbella Social Hub sobre emprendimiento –
+                    Ayuntamiento de Marbella (2022)
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+                  >
+                    Parte integrante del programa Enxerxades – Asociación
+                    Treball Solidari sobre Emprendimiento
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+                  >
+                    Participación en las Jornadas de Psicología de la UIB
+                  </li>
+                </ul>
+              </div>
+            </div>
           </details>
-          <details name="accordion">
-            <summary>Experiencia</summary>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              magni quos porro illo sunt perspiciatis laudantium minima, neque
-              id nostrum rem ea corrupti veritatis exercitationem minus tempore
-              distinctio, eligendi accusamus vel ducimus dicta maiores officiis!
-              Voluptas aspernatur magnam eligendi quae?
-            </p>
+          <details class="border-[1px] border-tan group" name="accordion">
+            <summary
+              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-7 cursor-pointer group-open:after:-rotate-45 after:transition-all py-6 px-4"
+            >
+              Experiencia
+            </summary>
+            <div class="py-6 px-4 pt-0">
+              <div class="">
+                <ul class="flex flex-col gap-y-5 mb-[30px]">
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+                  >
+                    Cursos de formación en igualdad de género – Agora Espacio de
+                    formación feminista (2018-2019)
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+                  >
+                    Programa Aceleradora para potenciar el Emprendimiento – Ifoc
+                    Calvià (2021-2022)
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+                  >
+                    Programa Marbella Social Hub sobre emprendimiento –
+                    Ayuntamiento de Marbella (2022)
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+                  >
+                    Parte integrante del programa Enxerxades – Asociación
+                    Treball Solidari sobre Emprendimiento
+                  </li>
+                  <li
+                    class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px] hidden lg:block"
+                  >
+                    Participación en las Jornadas de Psicología de la UIB
+                  </li>
+                </ul>
+              </div>
+            </div>
           </details>
         </div>
+        <div class="w-full text-center lg:mb-[227px] px-[15px] mb-[173px]">
+          <h3
+            class="font-josefin font-light lg:text-2xl text-xl mb-8 text-gray-dark"
+          >
+            ¿Te has quedado con alguna duda sin resolver?
+          </h3>
+          <a
+            class="font-medium text-sm uppercase text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px] w-fit px-5 hover:bg-tan-hover mx-auto"
+            >¡No dudes en contactarme!</a
+          >
+        </div>
+      </section>
+      <section
+        class="bg-tan-light relative pt-[174px] px-[15px] lg:px-0 lg:pt-0 lg:grid lg:grid-cols-[5vw_auto_5vw] lg:grid-rows-[59px_auto_59px]"
+      >
+        <div
+          class="border border-t-0 border-l-0 border-white w-full hidden lg:block"
+        ></div>
+        <div
+          class="border-b border-t-0 border-white w-full hidden lg:block"
+        ></div>
+        <div
+          class="border-[1px] border-r-0 border-t-0 border-white w-full hidden lg:block"
+        ></div>
+
+        <div class="border-r border-white hidden lg:block"></div>
+        <div class="w-full lg:relative lg:px-[53px] lg:pt-4 lg:pb-10">
+          <img
+            class="w-[188px] h-auto absolute mx-auto left-0 right-0 -top-[103px] lg:w-[25vw] lg:max-w-[366px] lg:right-[92px] lg:-top-[169px] lg:left-auto"
+            src="assets/images/ipad.webp"
+          />
+
+          <div
+            class="text-center lg:w-[43vw] max-w-[631px] lg:text-left mx-auto lg:mx-0"
+          >
+            <div class="">
+              <h2 class="lg:text-3xl font-medium mb-5 text-2xl text-white">
+                Suscribete a la newsletter y recibe un pdf gratis
+              </h2>
+              <p
+                class="font-josefin lg:text-base text-sm text-white font-light mb-8"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt officiis magni quas quod vel corporis provident
+                dignissimos distinctio, consequatur ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-l border-white hidden lg:block"></div>
+        <div
+          class="border border-l-0 border-b-0 border-white w-full hidden lg:block"
+        ></div>
+        <div class="border-t border-white w-full hidden lg:block"></div>
+        <div
+          class="border border-r-0 border-b-0 border-white w-full hidden lg:block"
+        ></div>
       </section>
     </main>
     <footer class="pt-5 pb-3">
