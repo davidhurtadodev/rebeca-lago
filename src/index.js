@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper-mobile', {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-mobile',
     clickable: true,
   },
 });
@@ -19,7 +19,7 @@ const swiperDesktop = new Swiper('.swiper-desktop', {
   slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.pagination-desktop',
     clickable: true,
   },
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,34 +17,40 @@
       class="bg-white border border-b-tan lg:bg-transparent lg:px-[5%] lg:border-0 fixed top-0 w-full z-30 lg:border-b-[1px] header transition-all duration-300"
     >
       <div
-        class="lg:border-l-[1px] lg:border-r-[1px] lg:border-b-0 lg:border-tan w-full flex items-center lg:px-8 max-w-[1290px] lg:w-[89vw]"
+        class="lg:border-l-[1px] lg:border-r-[1px] lg:border-b-0 lg:border-tan w-full flex items-center lg:px-8 max-w-[1290px] lg:w-[89vw] 2xl:mx-auto"
       >
-        <div class="w-[46%] py-[6px] pr-[15px] pl-4 lg:w-[300px]">
+        <div class="w-[46%] py-[6px] pr-[15px] pl-4 lg:w-[300px] shrink-0">
           <img
             class="w-[146px] h-auto lg:w-[300px]"
             src="assets/images/logo.svg"
             alt="Becca Lago Logo"
           />
         </div>
-        <div class="mr-0 ml-auto self-stretch flex">
+        <div class="mr-0 ml-auto self-stretch flex lg:flex-wrap">
           <nav
             class="flex gap-x-[50px] self-stretch items-center lg:self-center"
           >
             <a
-              class="font-bold text-sm uppercas hidden lg:block text-tan uppercase"
+              href="index.html"
+              class="font-bold text-sm uppercas hidden lg:block text-tan uppercase cursor-pointer lg:pb-2 hover:border-b hover:border-tan"
               >Inicio</a
             >
-            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+            <a
+              href="servicios.html"
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
               >Servicios</a
             >
-            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+            <a
+              href="quien-soy.html"
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
               >Quien soy</a
             >
-            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+            <a
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
               >Contacto</a
             >
             <a
-              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px] lg:bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5"
+              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px] lg:bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5 hover:bg-tan-hover hover:text-white"
             >
               Pedir cita
               <span class="material-symbols-outlined text-[20px]"
@@ -55,24 +61,31 @@
         </div>
         <button
           type="button"
-          class="mr-0 pl-3 pr-[10px] toggle-mobile-menu transition-all duration-1000 lg:hidden"
+          class="mr-0 pl-3 pr-[10px] toggle-mobile-menu group lg:hidden hover:text-white hover:bg-tan self-stretch"
         >
-          <span class="material-symbols-outlined text-tan text-[40px] grow-0"
+          <span
+            class="material-symbols-outlined text-tan text-[40px] grow-0 group-hover:text-white"
             >menu</span
           >
         </button>
       </div>
     </header>
-    <main class="relative">
+    <main class="relative overflow-hidden">
       <!-- Mobile menu -->
       <div
-        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000 lg:hidden"
+        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000 lg:hidden top-[60px] z-30"
       >
         <nav>
           <ul class="flex flex-col gap-x-[10px]">
-            <li class="text-white uppercase text-xl font-bold">Inicio</li>
-            <li class="text-white uppercase text-xl font-bold">Servicios</li>
-            <li class="text-white uppercase text-xl font-bold">Quien Soy</li>
+            <li class="text-white uppercase text-xl font-bold">
+              <a href="index.html">Inicio</a>
+            </li>
+            <li class="text-white uppercase text-xl font-bold">
+              <a href="servicios.html">Servicios</a>
+            </li>
+            <li class="text-white uppercase text-xl font-bold">
+              <a href="quien-soy.html">Quien Soy </a>
+            </li>
             <li class="text-white uppercase text-xl font-bold">Contacto</li>
           </ul>
         </nav>
@@ -83,7 +96,7 @@
         class="bg-[url('../assets/images/background.webp')] text-center pt-[150px] pb-[90px] px-[15px] bg-[lenght:895px] lg:bg-[url('../assets/images/background-hero.png')] lg:p-0 lg:pt-[98px] bg-cover"
       >
         <div
-          class="max-w-[1290px] lg:grid lg:grid-cols-[68%_1fr] lg:mx-auto lg:w-[89vw] lg:border-l-[1px] lg:border-r-[1px] lg:border-tan"
+          class="max-w-[345px] lg:max-w-[1290px] lg:grid lg:grid-cols-[68%_1fr] lg:mx-auto lg:w-[89vw] lg:border-l-[1px] lg:border-r-[1px] lg:border-tan mx-auto"
         >
           <div class="flex items-center lg:pl-12">
             <h1
@@ -116,47 +129,49 @@
       <section
         class="pt-[45px] pb-[120px] px-[15px] bg-beige lg:pt-[116px] lg:pb-[179px]"
       >
-        <div class="mb-[66px] lg:text-center lg:mb-[136px]">
-          <h2
-            class="text-[30px] font-medium leading-normal text-gray-light lg:text-3xl"
-          >
-            Aprende a sanar tus heridas y a crear relaciones sanas
-          </h2>
-        </div>
-        <div class="lg:flex justify-between max-w-[1290px] lg:pl-[135px]">
-          <div class="relative mb-10">
-            <img
-              alt="Manos rezando con un fondo de playa"
-              src="/src/assets/images/manos.webp"
-              class="w-[172px] h-[243px] relative top-[-29px] left-[49px] lg:absolute lg:w-[344px] lg:h-[486px] lg:z-10"
-            />
-            <img
-              src="/src/assets/images/mesa.webp"
-              class="absolute w-[180px] h-[255px] top-0 lg:relative lg:w-[360px] lg:h-[509px]"
-            />
-          </div>
-          <div class="basis-[54%]">
-            <div class="mb-5">
-              <p
-                class="font-josefin font-light text-base mb-5 text-gray-light lg:text-xl"
-              >
-                ¿Repites patrones que te hacen daño? ¿Arrastras heridas de
-                relaciones pasadas que no te permiten avanzar? ¿Te cuesta
-                establecer límites y terminas en relaciones que no te valoran?
-                ¿Desarrollas dependencia emocional en tus relaciones?
-              </p>
-              <p
-                class="font-josefin font-light text-base text-gray-light lg:text-xl"
-              >
-                <span class="font-medium">Aquí tienes un refugio</span> donde
-                aprender a sanar a tu propio ritmo.
-              </p>
-            </div>
-
-            <a
-              class="font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px]"
-              >¿Empezamos juntas este camino?</a
+        <div class="mx-auto max-w-[375px] lg:max-w-none">
+          <div class="mb-[66px] lg:text-center lg:mb-[136px]">
+            <h2
+              class="text-[30px] font-medium leading-normal text-gray-light lg:text-3xl"
             >
+              Aprende a sanar tus heridas y a crear relaciones sanas
+            </h2>
+          </div>
+          <div class="lg:flex justify-between max-w-[1290px] lg:pl-[135px]">
+            <div class="relative mb-10">
+              <img
+                alt="Manos rezando con un fondo de playa"
+                src="/src/assets/images/manos.webp"
+                class="w-[172px] h-[243px] relative top-[-29px] left-[49px] lg:absolute lg:w-[344px] lg:h-[486px] lg:z-10"
+              />
+              <img
+                src="/src/assets/images/mesa.webp"
+                class="absolute w-[180px] h-[255px] top-0 lg:relative lg:w-[360px] lg:h-[509px]"
+              />
+            </div>
+            <div class="basis-[54%]">
+              <div class="mb-5">
+                <p
+                  class="font-josefin font-light text-base mb-5 text-gray-light lg:text-xl"
+                >
+                  ¿Repites patrones que te hacen daño? ¿Arrastras heridas de
+                  relaciones pasadas que no te permiten avanzar? ¿Te cuesta
+                  establecer límites y terminas en relaciones que no te valoran?
+                  ¿Desarrollas dependencia emocional en tus relaciones?
+                </p>
+                <p
+                  class="font-josefin font-light text-base text-gray-light lg:text-xl"
+                >
+                  <span class="font-medium">Aquí tienes un refugio</span> donde
+                  aprender a sanar a tu propio ritmo.
+                </p>
+              </div>
+
+              <a
+                class="font-medium text-sm uppercase w-full text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px]"
+                >¿Empezamos juntas este camino?</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -221,7 +236,9 @@
           </div>
         </div>
       </section>
-      <section class="mx-[15px] mb-[84px] flex flex-col items-center">
+      <section
+        class="px-[15px] mb-[84px] flex flex-col items-center max-w-[345px] lg:max-w-none mx-auto"
+      >
         <div class="w-full text-center">
           <h2
             class="text-2xl font-medium text-gray-light mb-[112px] lg:text-[40px]"
@@ -477,9 +494,9 @@
       </section>
       <!-- testimonials -->
       <section
-        class="text-center bg-[url('../assets/images/background-testimonial-mobile.webp')] pt-14 pb-16"
+        class="text-center bg-[url('../assets/images/background-testimonial-mobile.webp')] pt-14 pb-16 bg-cover mb-[90px] lg:mb-[50px]"
       >
-        <div class="max-w-[345px] text-center mx-auto">
+        <div class="max-w-[345px] lg:max-w-none text-center mx-auto">
           <h2 class="text-gray-light opacity-80 font-medium text-2xl mb-6">
             Testimonios
           </h2>
@@ -490,7 +507,7 @@
 
         <div class="swiper swiper-mobile lg:hidden w-full h-full">
           <div class="swiper-wrapper">
-            <div class="swiper-slide flex justify-center items-center">
+            <div class="swiper-slide flex justify-center items-stretch h-auto">
               <div
                 class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto"
               >
@@ -521,9 +538,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide flex justify-center items-center">
+            <div class="swiper-slide flex justify-center items-stretch h-auto">
               <div
-                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto"
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto"
               >
                 <p
                   class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
@@ -548,9 +565,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide flex justify-center items-center">
+            <div class="swiper-slide flex justify-center items-stretch h-auto">
               <div
-                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto h-[430px]"
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto"
               >
                 <p
                   class="font-josefin font-light text-sm text-gray-light opacity-80"
@@ -580,13 +597,15 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination relative mt-[30px]"></div>
+          <div class="swiper-pagination-mobile relative mt-[30px]"></div>
         </div>
-        <div class="swiper swiper-desktop hidden lg:flex w-full h-full">
+        <div
+          class="swiper swiper-desktop max-w-[1070px] hidden pb-[50px] lg:flex w-full h-full"
+        >
           <div class="swiper-wrapper">
-            <div class="swiper-slide flex justify-center items-center">
+            <div class="swiper-slide flex justify-center tems-stretch h-auto">
               <div
-                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto lg:w-[519px] lg:h-[308px]"
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto lg:w-[519px]"
               >
                 <p
                   class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
@@ -615,9 +634,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide flex justify-center items-center">
+            <div class="swiper-slide flex justify-center tems-stretch h-auto">
               <div
-                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto lg:w-[519px] lg:h-[308px]"
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto lg:w-[519px]"
               >
                 <p
                   class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
@@ -646,9 +665,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide flex justify-center items-center">
+            <div class="swiper-slide flex justify-center tems-stretch h-auto">
               <div
-                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto h-[430px] lg:w-[519px] lg:h-[308px]"
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto h-[430px] lg:w-[519px]"
               >
                 <p
                   class="font-josefin font-light text-sm text-gray-light opacity-80"
@@ -674,13 +693,92 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination relative mt-[30px]"></div>
+          <div
+            class="swiper-pagination bottom-0 pagination-desktop mt-[30px]"
+          ></div>
         </div>
       </section>
-      <!-- </div> -->
+      <section
+        class="max-[375px] px-[15px] lg:max-w-none pb-[173px] lg:pb-[202px]"
+      >
+        <div class="mb-[78px] text-center mx-auto lg:mb-6">
+          <h2 class="font medium text-2xl mb-5 lg:text-3xl text-gray-dark">
+            ¿No lo tienes claro?
+          </h2>
+          <p
+            class="font-josefin font-light lg:text-xl text-base text-gray-light"
+          >
+            Déjame ayudarte a valorar tu situación. Cuéntame tu historia
+          </p>
+        </div>
+        <div class="flex justify-center gap-x-[194px] w-full">
+          <div class="relative hidden lg:block">
+            <div
+              class="border border-tan w-[26vw] h-[38vw] absolute top-[60px] left-[75px] rounded-tr-[30px]"
+            ></div>
+            <div>
+              <img
+                class="relative w-[24vw] h-auto top-[153px]"
+                src="assets/images/mujer-en-playa.webp"
+              />
+            </div>
+          </div>
+          <div
+            class="border border-tan rounded-tr-[30px] pt-10 lg:px-8 px-4 w-full lg:w-fit"
+          >
+            <div class="lg:w-[458px] w-full h-[674px]">Aca va formulario</div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="pt-5 pb-3">
-      <div class="px-[15px] w-full flex flex-col items-center">
+    <footer class="pb-3">
+      <section
+        class="bg-tan-light relative pt-[174px] px-[15px] lg:px-0 lg:pt-0 lg:grid lg:grid-cols-[5vw_auto_5vw] lg:grid-rows-[59px_auto_59px]"
+      >
+        <div
+          class="border border-t-0 border-l-0 border-white w-full hidden lg:block"
+        ></div>
+        <div
+          class="border-b border-t-0 border-white w-full hidden lg:block"
+        ></div>
+        <div
+          class="border-[1px] border-r-0 border-t-0 border-white w-full hidden lg:block"
+        ></div>
+
+        <div class="border-r border-white hidden lg:block"></div>
+        <div class="w-full lg:relative lg:px-[53px] lg:pt-4 lg:pb-10">
+          <img
+            class="w-[188px] h-auto absolute mx-auto left-0 right-0 -top-[103px] lg:w-[25vw] lg:max-w-[366px] lg:right-[92px] lg:-top-[169px] lg:left-auto"
+            src="assets/images/ipad.webp"
+          />
+
+          <div
+            class="text-center lg:w-[43vw] max-w-[631px] lg:text-left mx-auto lg:mx-0"
+          >
+            <div class="">
+              <h2 class="lg:text-3xl font-medium mb-5 text-2xl text-white">
+                Suscribete a la newsletter y recibe un pdf gratis
+              </h2>
+              <p
+                class="font-josefin lg:text-base text-sm text-white font-light mb-8"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt officiis magni quas quod vel corporis provident
+                dignissimos distinctio, consequatur ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-l border-white hidden lg:block"></div>
+        <div
+          class="border border-l-0 border-b-0 border-white w-full hidden lg:block"
+        ></div>
+        <div class="border-t border-white w-full hidden lg:block"></div>
+        <div
+          class="border border-r-0 border-b-0 border-white w-full hidden lg:block"
+        ></div>
+      </section>
+      <div class="px-[15px] w-full flex flex-col items-center pt-5">
         <img
           src="/src/assets/images/logo-minus.svg"
           class="w-[54px] h-auto mb-[18px]"

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,16 +31,22 @@
             class="flex gap-x-[50px] self-stretch items-center lg:self-center"
           >
             <a
-              class="font-bold text-sm uppercas hidden lg:block text-tan uppercase"
+              href="index.html"
+              class="font-bold text-sm uppercas hidden lg:block text-tan uppercase cursor-pointer lg:pb-2 hover:border-b hover:border-tan"
               >Inicio</a
             >
-            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+            <a
+              href="servicios.html"
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
               >Servicios</a
             >
-            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+            <a
+              href="quien-soy.html"
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
               >Quien soy</a
             >
-            <a class="font-bold text-sm uppercase hidden lg:block text-tan"
+            <a
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
               >Contacto</a
             >
             <a
@@ -64,20 +70,26 @@
         </button>
       </div>
     </header>
-    <main class="relative">
+    <main class="relative overflow-hidden">
       <!-- Mobile menu -->
-      <!-- <div
-        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000 lg:hidden"
+      <div
+        class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000 lg:hidden top-[60px] z-30"
       >
         <nav>
           <ul class="flex flex-col gap-x-[10px]">
-            <li class="text-white uppercase text-xl font-bold">Inicio</li>
-            <li class="text-white uppercase text-xl font-bold">Servicios</li>
-            <li class="text-white uppercase text-xl font-bold">Quien Soy</li>
+            <li class="text-white uppercase text-xl font-bold">
+              <a href="index.html">Inicio</a>
+            </li>
+            <li class="text-white uppercase text-xl font-bold">
+              <a href="servicios.html">Servicios</a>
+            </li>
+            <li class="text-white uppercase text-xl font-bold">
+              <a href="quien-soy.html">Quien Soy </a>
+            </li>
             <li class="text-white uppercase text-xl font-bold">Contacto</li>
           </ul>
         </nav>
-      </div> -->
+      </div>
       <!-- End mobile menu -->
       <!-- hero -->
       <section
@@ -90,11 +102,11 @@
           <div class="relative mt-[69px] grow lg:hidden ml-10 mb-20">
             <img
               class="w-[166px] h-auto"
-              src="/assets/images/rectangle-empty.svg"
+              src="assets/images/rectangle-empty.svg"
             />
             <img
               class="w-[178px] h-auto absolute -left-10 top-[16px]"
-              src="/assets/images/quien-soy-mobile.webp"
+              src="assets/images/quien-soy-mobile.webp"
             />
           </div>
           <div class="flex gap-x-[10px] mb-5">
@@ -249,9 +261,9 @@
           class="lg:px-[110px] lg:gap-y-[160px] lg:flex lg:flex-col max-w-[330px] lg:max-w-fit mx-auto"
         >
           <div
-            class="flex justify-between flex-col-reverse lg:flex-row mb-[30px] lg:mb-0"
+            class="flex justify-between flex-col-reverse lg:flex-row mb-[30px] lg:mb-0 lg:gap-x-[159px]"
           >
-            <div class="max-w-[662px]">
+            <div class="max-w-[662px] lg:shrink">
               <h3 class="lg:text-2xl lg:mb-2 text-white text-xl mb-7">
                 De Palma a Florencia
               </h3>
@@ -270,21 +282,21 @@
               </p>
             </div>
             <div
-              class="relative flex justify-end w-full mb-[88px] lg:mb-0 lg:grow-0 lg:w-fit"
+              class="relative flex justify-end w-full mb-[88px] lg:mb-0 lg:grow-0 lg:w-fit lg:shrink-0"
             >
               <div
                 class="bg-transparent border-[1px] border-white lg:w-[334px] lg:h-[317px] absolute lg:-left-[118px] lg:top-[79px] w-[249px] h-[236px] left-0 top-[58px]"
               ></div>
               <img
-                class="lg:w-[344px] w-[256px]"
+                class="lg:w-[344px] w-[256px] lg:h-[337px]"
                 src="assets/images/manos-rezando-quien-soy.webp"
               />
             </div>
           </div>
           <div
-            class="flex justify-between lg:flex-row-reverse flex-col-reverse mb-[30px] lg:mb-0"
+            class="flex justify-between lg:flex-row-reverse flex-col-reverse mb-[30px] lg:mb-0 lg:gap-x-[77px]"
           >
-            <div class="max-w-[662px]">
+            <div class="max-w-[662px] shrink">
               <h3 class="lg:text-2xl lg:mb-2 text-white text-xl mb-7">
                 Mi experiencia como psicóloga
               </h3>
@@ -304,14 +316,16 @@
                 afecto positivo y trastornos de ansiedad.
               </p>
             </div>
-            <div class="relative">
+            <div class="relative shrink-0">
               <img
                 class="lg:w-[438px] w-[281px] h-auto relative lg:-left-[75px] mb-7 lg:mb-0"
                 src="assets/images/cafe-quien-soy.webp"
               />
             </div>
           </div>
-          <div class="flex lg:flex-row justify-between flex-col-reverse">
+          <div
+            class="flex lg:flex-row justify-between flex-col-reverse lg:gap-x-[158px]"
+          >
             <div class="max-w-[662px]">
               <p class="font-josefin text-base mb-5 font-light text-white">
                 Además, en la Fundación IRES, donde actualmente trabajo, he
@@ -336,9 +350,9 @@
                 >Ver toda mi información</a
               >
             </div>
-            <div class="relative w-full h-[247px] mb-[34px] lg:mb-0">
+            <div class="relative w-fit h-[247px] mb-[34px] lg:mb-0">
               <div
-                class="bg-transparent border-[1px] border-white lg:w-[334px] lg:h-[317px] w-[260px] h-[247px] absolute right-0 lg:top-[100px]"
+                class="bg-transparent border-[1px] border-white lg:w-[334px] lg:h-[23vw] w-[260px] h-[247px] relative right-0 lg:top-[100px]"
               ></div>
               <img
                 class="lg:w-[353px] lg:h-[318px] absolute lg:top-10 w-[275px] h-[248px] -top-[32px] left-0 lg:left-auto lg:right-[89px]"
@@ -358,9 +372,9 @@
         </div>
         <div class="lg:px-[110px] lg:flex lg:flex-col">
           <div
-            class="flex justify-between flex-col lg:flex-row mb-[30px] lg:mb-[84px]"
+            class="flex justify-between flex-col lg:flex-row mb-[30px] lg:mb-[84px] lg:gap-x-[110px]"
           >
-            <div class="max-w-[662px]">
+            <div class="max-w-[662px] lg:shrink">
               <h3 class="lg:text-2xl lg:mb-2 text-gray-dark text-xl mb-7">
                 Cómo nació mi proyecto
               </h3>
@@ -380,7 +394,7 @@
               </p>
             </div>
             <div
-              class="relative w-full lg:mb-0 lg:grow-0 lg:w-fit border-[1px] border-tan lg:pt-[51px] lg:pl-[80px] lg:pr-10 self-baseline pb-10 max-w-[440px] lg:mt-12 pt-[51px] pl-[23px] mb-8"
+              class="relative w-full lg:mb-0 lg:grow-0 lg:w-fit border-[1px] border-tan lg:pt-[51px] lg:pl-[80px] lg:pr-10 self-baseline pb-10 max-w-[440px] lg:mt-12 pt-[51px] pl-[23px] mb-8 lg:shrink-0"
             >
               <img
                 class="w-[49px] h-auto absolute -top-[10px] lg:left-[80px]"
@@ -395,7 +409,7 @@
           <div
             class="flex justify-between lg:flex-row-reverse flex-col mb-[30px] lg:mb-[160px] lg:gap-x-[100px]"
           >
-            <div class="max-w-[662px] mb-5 lg:mb-0">
+            <div class="max-w-[662px] mb-5 lg:mb-0 shrink">
               <p class="font-josefin text-base mb-5 font-light text-gray-dark">
                 Para mí, la escritura es un proceso de autocuidado, de conexión
                 conmigo misma, de ordenar emociones, sentimientos, pensamientos
@@ -413,7 +427,7 @@
                 personal y la conexión genuina con cada paciente.
               </p>
             </div>
-            <div class="relative lg:w-[463px] mb-10 lg:mb-0">
+            <div class="relative lg:w-[463px] mb-10 lg:mb-0 lg:shrink-0">
               <div
                 class="bg-transparent border-[1px] border-tan lg:w-[388px] lg:h-[351px] w-[260px] h-[247px] right-0 absolute"
               ></div>
@@ -424,8 +438,10 @@
             </div>
           </div>
 
-          <div class="flex lg:flex-row justify-between flex-col">
-            <div class="max-w-[662px]">
+          <div
+            class="flex lg:flex-row justify-between flex-col lg:gap-x-[28px]lg:justify-center"
+          >
+            <div class="max-w-[662px] lg:shrink">
               <h3 class="lg:text-2xl lg:mb-2 text-gray-dark text-xl mb-7">
                 Mis pilares fundamentales: resiliencia y empoderamiento
               </h3>
@@ -443,9 +459,11 @@
                 escuchado y acompañado en su proceso de sanación.
               </p>
             </div>
-            <div class="relative w-full h-[247px] mb-[34px] lg:mb-0">
+            <div
+              class="relative w-full h-[247px] mb-[34px] lg:mb-0 lg:shrink-0 lg:w-[353px]"
+            >
               <img
-                class="lg:w-[353px] lg:h-[318px] lg:absolute lg:top-10 w-[275px] h-[248px] lg:left-auto lg:right-[89px] relative"
+                class="lg:w-[353px] lg:h-[318px] lg:absolute lg:top-10 w-[275px] h-[248px] lg:left-0 relative"
                 src="assets/images/manos2.webp"
               />
             </div>
@@ -571,6 +589,8 @@
           >
         </div>
       </section>
+    </main>
+    <footer class="pt-5 pb-3">
       <section
         class="bg-tan-light relative pt-[174px] px-[15px] lg:px-0 lg:pt-0 lg:grid lg:grid-cols-[5vw_auto_5vw] lg:grid-rows-[59px_auto_59px]"
       >
@@ -617,8 +637,6 @@
           class="border border-r-0 border-b-0 border-white w-full hidden lg:block"
         ></div>
       </section>
-    </main>
-    <footer class="pt-5 pb-3">
       <div class="px-[15px] w-full flex flex-col items-center">
         <img
           src="/src/assets/images/logo-minus.svg"

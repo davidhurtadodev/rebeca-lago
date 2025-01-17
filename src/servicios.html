@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="../node_modules/material-symbols/index.css" rel="stylesheet" />
+    <link href="./styles/output.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden relative">
+    <header
+      class="bg-white border border-b-tan lg:bg-transparent lg:px-[5%] lg:border-0 fixed top-0 w-full z-30 lg:border-b-[1px] header transition-all duration-300"
+    >
+      <div
+        class="lg:border-l-[1px] lg:border-r-[1px] lg:border-b-0 lg:border-tan w-full flex items-center lg:px-8 max-w-[1290px] lg:w-[89vw]"
+      >
+        <div class="w-[46%] py-[6px] pr-[15px] pl-4 lg:w-[300px]">
+          <img
+            class="w-[146px] h-auto lg:w-[300px]"
+            src="assets/images/logo.svg"
+            alt="Becca Lago Logo"
+          />
+        </div>
+        <div class="mr-0 ml-auto self-stretch flex">
+          <nav
+            class="flex gap-x-[50px] self-stretch items-center lg:self-center"
+          >
+            <a
+              href="index.html"
+              class="font-bold text-sm uppercas hidden lg:block text-tan uppercase cursor-pointer lg:pb-2 hover:border-b hover:border-tan"
+              >Inicio</a
+            >
+            <a
+              href="servicios.html"
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
+              >Servicios</a
+            >
+            <a
+              href="quien-soy.html"
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
+              >Quien soy</a
+            >
+            <a
+              class="cursor-pointer font-bold text-sm uppercase hidden lg:block text-tan lg:pb-2 hover:border-b hover:border-tan"
+              >Contacto</a
+            >
+            <a
+              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] border-tan h-auto self-stretch items-center cursor-pointer basis-[140px] lg:bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5 hover:bg-tan-hover hover:text-white"
+            >
+              Pedir cita
+              <span class="material-symbols-outlined text-[20px]"
+                >arrow_outward</span
+              >
+            </a>
+          </nav>
+        </div>
+        <button
+          type="button"
+          class="mr-0 pl-3 pr-[10px] toggle-mobile-menu group lg:hidden hover:text-white hover:bg-tan self-stretch"
+        >
+          <span
+            class="material-symbols-outlined text-tan text-[40px] grow-0 group-hover:text-white"
+            >menu</span
+          >
+        </button>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div
+      class="bg-tan py-4 pl-4 mobile-menu absolute w-full left-full transition-all duration-1000 lg:hidden top-[60px] z-30"
+    >
+      <nav>
+        <ul class="flex flex-col gap-x-[10px]">
+          <li class="text-white uppercase text-xl font-bold">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="text-white uppercase text-xl font-bold">
+            <a href="servicios.html">Servicios</a>
+          </li>
+          <li class="text-white uppercase text-xl font-bold">
+            <a href="quien-soy.html">Quien Soy </a>
+          </li>
+          <li class="text-white uppercase text-xl font-bold">Contacto</li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End mobile menu -->
+    <main class="relative overflow-hidden mt-[90px] lg:mt-[166px]">
+      <!-- hero -->
+      <section
+        class="lg:pt-[98px] max-w-[1290px] lg:grid lg:grid-cols-[60%_1fr] lg:mx-auto lg:w-[89vw] flex flex-col px-[15px] lg:px-0 mx-auto lg:mb-[163px] mb-[71px]"
+      >
+        <div
+          class="grow-0 lg:max-w-[745px] max-w-[345px] mx-auto text-center lg:text-left"
+        >
+          <h1
+            class="text-[33px] lg:text-4xl opacity-80 lg:mb-[14px] text-gray-dark mb-5"
+          >
+            Terapia especializada en autoestima y dependencia emocional
+          </h1>
+          <div class="relative mt-[38px] grow lg:hidden h-[434px] mb-0">
+            <img
+              class="w-[274px] h-auto absolute right-0"
+              src="assets/images/rectangle-servicios-hero.svg"
+            />
+            <img
+              class="w-[295px] h-auto absolute top-[37px]"
+              src="assets/images/hero-servicios.webp"
+            />
+          </div>
+          <div class="hidden lg:block">
+            <p class="font-josefin font-light text-gray-light text-xl mb-5">
+              La vida es un camino lleno de desafíos y momentos difíciles, y
+              todos en algún momento necesitamos el apoyo adecuado para sanar,
+              crecer y reconectar con nuestra verdadera esencia. 
+            </p>
+            <p class="font-josefin font-light text-gray-light text-xl mb-5">
+              No importa lo que hayas vivido, aquí encontrarás un espacio seguro
+              para entenderte.
+            </p>
+          </div>
+        </div>
+        <div class="relative mt-[69px] grow hidden lg:block">
+          <img
+            class="lg:w-[328px] lg:left-[83px] relative h-auto"
+            src="assets/images/rectangle-servicios-hero.svg"
+          />
+          <img
+            class="lg:w-[355px] h-auto absolute lg:top-[45px]"
+            src="assets/images/hero-servicios.webp"
+          />
+        </div>
+      </section>
+      <section class="text-center w-full px-[15px] lg:mb-[161px] mb-10">
+        <div class="w-full max-w-[345px] lg:max-w-none mx-auto">
+          <h2 class="lg:text-3xl lg:mb-[50px] text-gray-light text-2xl mb-9">
+            Tanto mis sesiones de terapia como mis talleres son:
+          </h2>
+        </div>
+        <div
+          class="flex justify-center items-stretch lg:h-[293px] lg:gap-x-8 gap-x-4 h-[171px]"
+        >
+          <div
+            class="bg-beige lg:max-w-[410px] lg:pt-[30px] lg:px-[46px] max-w-[165px] pt-5 px-4"
+          >
+            <div class="flex flex-col">
+              <span
+                class="material-symbols-outlined text-[58px] text-tan lg:mb-3 mb-1"
+                >desktop_mac</span
+              >
+              <h3 class="lg:text-xl text-gray-light font-medium mb-3">
+                Online y presencial
+              </h3>
+              <p
+                class="font-josefin text-base text-gray-light font-light hidden lg:block"
+              >
+                Estés donde estés, me adapto a tus necesidades y zona geográfica
+                para que podamos trabajar juntas.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-beige lg:max-w-[410px] lg:pt-[30px] lg:px-[46px] max-w-[165px] pt-5 px-4"
+          >
+            <div class="flex flex-col">
+              <span
+                class="material-symbols-outlined text-[58px] text-tan lg:mb-3 mb-1"
+                >partner_exchange</span
+              >
+              <h3 class="lg:text-xl text-gray-light font-medium mb-3">
+                Individual y en pareja
+              </h3>
+              <p
+                class="font-josefin text-base text-gray-light font-light hidden lg:block"
+              >
+                Tanto si vienes por tu cuenta como con tu pareja, las sesiones
+                son 100% personalizadas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full px-[15px] lg:mb-[219px] mb-10">
+        <div class="w-full text-center px-[15px] mb-[100px]">
+          <h2 class="lg:text-3xl text-gray-light text-2xl mb-5">
+            Encuentra el plan que mejor se adapta a ti
+          </h2>
+          <p class="font-josefin font-light text-gray-light text-xl mb-5">
+            El primer paso para un cambio profundo es elegir el plan que mejor
+            se ajuste a tus necesidades.
+          </p>
+          <p class="font-josefin font-light text-gray-light text-xl">
+            El objetivo es que encuentres el enfoque adecuado para ti, sea cual
+            sea tu situación actual.
+          </p>
+        </div>
+        <div
+          class="bg-beige flex max-w-[1070px] lg:w-[74vw] mx-auto lg:pr-16 lg:pt-12 justify-end relative lg:pb-12 px-[15px] lg:px-0 pt-[314px] pb-8 mb-[182px]"
+        >
+          <img
+            class="lg:w-[39%] h-auto absolute lg:-left-[81px] lg:top-[73px] mx-auto left-0 right-0 w-[202px] -top-[49px] lg:mx-0"
+            src="assets/images/libro-manta.webp"
+          />
+          <div class="lg:w-[52%]">
+            <h3
+              class="font-medium text-xl mb-3 text-gray-light opacity-80 lg:text-2xl"
+            >
+              Talleres de autoestima y dependencia emocional
+            </h3>
+            <p class="font-josefin font-light text-gray-light text-base mb-3">
+              Talleres tanto online como presenciales orientados a abordar temas
+              específicos de crecimiento personal, autoestima y relaciones.
+              Estos talleres están diseñados para profundizar en áreas puntuales
+              que afectan a las relaciones.
+            </p>
+            <h4 class="text-xl font-josefin font-medium text-tan mb-5">
+              ¿Qué haremos en el taller?
+            </h4>
+            <ul class="flex flex-col gap-y-5 mb-10">
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Aprender a poner límites
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Trabajar para superar una ruptura
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Dependencia emocional y relaciones tóxicas
+              </li>
+            </ul>
+            <p class="font-josefin font-light text-gray-light text-base mb-5">
+              Profundizar en los patrones de dependencia emocional y aprender a
+              romper ciclos de relaciones tóxicas.
+            </p>
+            <p class="font-josefin font-light text-gray-light text-base mb-8">
+              Programa de 1 mes y medio con 6 sesiones (50 minutos cada una).
+            </p>
+            <a
+              class="font-medium text-sm uppercase text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px] w-fit px-5 hover:bg-tan-hover mb-8"
+              >Inscribirse</a
+            >
+            <p class="font-josefin font-light text-gray-light text-base">
+              Reserva tu sesión conmigo hoy y empieza el camino hacia una
+              versión más fuerte y libre de ti misma. Tu mejor versión te espera
+              al otro lado de la zona de confort.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white flex max-w-[1070px] lg:w-[74vw] mx-auto lg:pr-16 lg:pt-12 justify-start relative lg:pb-12 px-[15px] pt-[314px] pb-8 mb-[182px] border border-beige lg:px-[50px]"
+        >
+          <img
+            class="lg:w-[29%] h-auto absolute lg:-right-[81px] lg:top-[56px] mx-auto left-auto right-0 w-[278px] -top-[42px] lg:mx-0"
+            src="assets/images/libro-sombra.webp"
+          />
+          <div class="lg:w-[67%]">
+            <h3
+              class="font-medium text-xl mb-3 text-gray-light opacity-80 lg:text-2xl"
+            >
+              Sesiones de terapia individual
+            </h3>
+            <p class="font-josefin font-light text-gray-light text-base mb-3">
+              Sesiones individuales diseñadas para enfocarse completamente en
+              tus necesidades y procesos personales.
+            </p>
+            <ul class="flex flex-col gap-y-5 mb-10">
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                Presencial en Palma de Mallorca u Online
+              </li>
+              <li
+                class="bg-[url('../assets/images/checkmark.svg')] bg-no-repeat bg-left-top text-base font-josefin font-light text-gray-light pl-[35px]"
+              >
+                50 minutos por sesión
+              </li>
+            </ul>
+            <p class="font-josefin font-light text-gray-light text-base mb-5">
+              En cada sesión trabajaremos en aspectos como sanar heridas
+              emocionales, reconstruir tu autoestima, reconocer tu tipo de
+              apego, cortar vínculos traumáticos y aprender a construir
+              relaciones sanas y equilibradas.
+            </p>
+
+            <a
+              class="font-medium text-[14px] uppercase text-tan flex item-center pl-4 pr-2 border-l-[1px] border-r-[1px] h-auto self-stretch items-center cursor-pointer basis-[140px] bg-tan lg:text-white lg:font-medium lg:text-sm lg:basis-auto lg:py-2 lg:px-5 hover:bg-tan-hover hover:text-white w-fit"
+            >
+              Pedir cita
+              <span class="material-symbols-outlined text-[20px]"
+                >arrow_outward</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="w-full bg-tan-light px-[15px] pt-9 pb-[71px] pb lg:pb-[118px] lg:pt-[57px] mb-[117px] lg:mb-[100px]"
+      >
+        <div class="w-full text-center max-w-[320px] lg:max-w-none mx-auto">
+          <h2 class="lg:text-3xl lg:mb-[109px] text-white text-2xl mb-9">
+            ¿Te cuento lo que vamos a hacer?
+          </h2>
+        </div>
+        <div
+          class="flex lg:justify-center lg:gap-x-[92px] max-w-[345px] lg:max-w-none mx-auto lg:mx-0"
+        >
+          <img
+            class="lg:w-[353px] h-auto hidden lg:block"
+            src="assets/images/escritorio-cafe.webp"
+          />
+          <div class="inline-grid grid-cols-[auto_auto] gap-x-[30px]">
+            <div class="flex flex-col items-center">
+              <div
+                class="bg-gray-light flex justify-center items-center text-[28px] font-medium w-[46px] h-[46px] text-white"
+              >
+                1
+              </div>
+              <div
+                class="self-stretch border border-gray-light grow w-[1px] mx-auto"
+              ></div>
+            </div>
+            <div class="max-w-[630px] pb-[52px]">
+              <h3 class="font-josefin text-2xl font-light mb-[10px] text-white">
+                Primera sesión
+              </h3>
+              <p class="font-josefin font-light text-white text-base">
+                Durante nuestra primera sesión, exploraremos en profundidad los
+                desafíos que estás enfrentando, identificando patrones y
+                estableciendo objetivos claros para tu terapia.  
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="bg-gray-light flex justify-center items-center text-[28px] font-medium w-[46px] h-[46px] text-white"
+              >
+                2
+              </div>
+              <div
+                class="self-stretch border border-gray-light grow w-[1px] mx-auto"
+              ></div>
+            </div>
+            <div class="max-w-[630px] pb-[52px]">
+              <h3 class="font-josefin text-2xl font-light mb-[10px] text-white">
+                Sesiones de seguimiento
+              </h3>
+              <p class="font-josefin font-light text-white text-base">
+                En cada sesión, trabajaremos en sanar tus heridas emocionales,
+                reconstruir tu autoestima, entender tu tipo de apego, cortar
+                vínculos traumáticos y desarrollar estrategias para hablarte
+                mejor y construir relaciones más sanas.
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="bg-gray-light flex justify-center items-center text-[28px] font-medium w-[46px] h-[46px] text-white"
+              >
+                3
+              </div>
+            </div>
+            <div class="max-w-[630px]">
+              <h3 class="font-josefin text-2xl font-light mb-[10px] text-white">
+                La magia de la terapia
+              </h3>
+              <p class="font-josefin font-light text-white text-base">
+                A medida que avanzas en tu proceso, comenzarás a notar cambios
+                reales en tu vida. Sentirás un mayor control sobre tus
+                emociones, tu autoestima se fortalecerá, y empezarás a crear la
+                vida que siempre has deseado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-white lg:pl-[75px] lg:pr-[113px] lg:flex px-[15px] lg:mb-[134px] mb-[73px]"
+      >
+        <div class="lg:w-1/2 max-w-[345px] lg:max-w-none mx-auto lg:mx-none">
+          <h2 class="lg:text-3xl lg:mb-[26px] text-gray-light mb-10 text-xl">
+            ¿Estás lista para empezar tu transformación?
+          </h2>
+          <div class="lg:hidden relative mr-0 ml-auto mb-8">
+            <div
+              class="w-[300px] h-[201px] bg-beige relative left-0 right-[72px]"
+            ></div>
+            <img
+              class="w-[300px] h-auto absolute top-0 right-0"
+              src="assets/images/receba-transformacion.webp"
+            />
+          </div>
+
+          <p class="font-josefin text-xl text-gray-light font-light mb-5">
+            No tienes que recorrer este camino sola. Juntas, podemos crear la
+            vida que mereces.
+          </p>
+          <p class="font-josefin text-xl text-gray-light font-light">
+            Reserva tu primera sesión y da el primer paso hacia una versión más
+            fuerte, segura y feliz de ti misma. Yo te ayudaré a diseñar una
+            rutina de autocuidado que se adapte a tu día a día, a entender y
+            sanar tus heridas, y a construir una relación más bonita y saludable
+            contigo misma. 
+          </p>
+        </div>
+        <div class="hidden lg:block relative mr-0 ml-auto">
+          <div
+            class="w-[33vw] h-[22vw] bg-beige relative top-[55px] right-[72px]"
+          ></div>
+          <img
+            class="lg:w-[33vw] h-auto absolute top-0 right-0"
+            src="assets/images/receba-transformacion.webp"
+          />
+        </div>
+      </section>
+      <section
+        class="bg-beige lg:py-[100px] pt-[60px] pb-[45px] lg:mb-[100px] mb-[45px]"
+      >
+        <div
+          class="w-full text-center max-w-[345px] lg:max-w-auto mx-auto lg:max-w-none"
+        >
+          <h2
+            class="lg:text-3xl text-gray-light text-2xl mb-5 lg:mb-[60px] mx-auto"
+          >
+            Aprende a sanar tus heridas y a crear relaciones sanas
+          </h2>
+        </div>
+        <!-- Carousel -->
+        <div class="swiper swiper-mobile lg:hidden w-full h-full">
+          <div class="swiper-wrapper flex items-stretch">
+            <div class="swiper-slide flex justify-center items-center">
+              <div class="w-full flex flex-col max-w-[345px] mx-auto">
+                <div>
+                  <img
+                    src="assets/images/sanar-servicios-1.webp"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <div class="bg-tan-light pl-4 pr-[6px] pt-6 grow pb-3">
+                  <h3 class="text-base font-medium mb-[10px] text-white">
+                    "No tengo tiempo para la terapia."
+                  </h3>
+                  <p class="text-white font-josefin font-light">
+                    Entiendo que la vida puede ser agitada, pero tu bienestar es
+                    una ​inversión a largo plazo. Ofrezco sesiones online para
+                    que puedas ​acceder a la terapia desde donde estés, en el
+                    horario que mejor se ​adapte a ti.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div class="w-full flex flex-col max-w-[345px] mx-auto">
+                <div>
+                  <img
+                    src="assets/images/sanar-servicios-2.webp"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <div class="bg-tan-light pl-4 pr-[6px] pt-6 grow pb-8">
+                  <h3 class="text-base font-medium mb-[10px] text-white">
+                    "No sé si la terapia es para mí."
+                  </h3>
+                  <p class="text-white font-josefin font-light">
+                    Es natural tener dudas, pero si sientes que necesitas un
+                    cambio, la ​terapia puede ser ese espacio seguro donde
+                    explorar tus emociones y ​aprender a gestionarlas. No
+                    necesitas estar en crisis para beneficiarte ​de la terapia;
+                    es un camino hacia el autoconocimiento y la paz ​interior.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div class="w-full flex flex-col max-w-[345px] mx-auto">
+                <div>
+                  <img
+                    src="assets/images/sanar-servicios-3.webp"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <div class="bg-tan-light pl-4 pr-[6px] pt-6 grow pb-3">
+                  <h3 class="text-base font-medium mb-[10px] text-white">
+                    "Es caro ¿y si no me lo puedo permitir?"
+                  </h3>
+                  <p class="text-white font-josefin font-light">
+                    La terapia es una inversión en ti misma. El costo puede
+                    parecer ​elevado, pero los beneficios son incalculables.
+                    Considera cuánto ​tiempo has pasado sintiéndote atrapada y
+                    cuánto valoraría una vida ​en la que te sientas empoderada y
+                    feliz. Además, ofrecemos opciones ​de pago flexibles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination relative mt-[30px]"></div>
+        </div>
+        <!-- End carousel -->
+        <div
+          class="lg:flex gap-x-[30px] items-stretch w-full justify-center flex-wrap gap-y-[30px] hidden"
+        >
+          <div class="w-[410px] flex flex-col">
+            <div>
+              <img
+                src="assets/images/sanar-servicios-1.webp"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="bg-tan-light pl-4 pr-3 pt-6 grow pb-8">
+              <h3 class="text-base font-medium mb-[10px] text-white">
+                "No tengo tiempo para la terapia."
+              </h3>
+              <p class="text-white font-josefin font-light">
+                Entiendo que la vida puede ser agitada, pero tu bienestar es una
+                ​inversión a largo plazo. Ofrezco sesiones online para que
+                puedas ​acceder a la terapia desde donde estés, en el horario
+                que mejor se ​adapte a ti.
+              </p>
+            </div>
+          </div>
+          <div class="w-[410px] flex flex-col">
+            <div>
+              <img
+                src="assets/images/sanar-servicios-2.webp"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="bg-tan-light pl-4 pr-3 pt-6 grow pb-8">
+              <h3 class="text-base font-medium mb-[10px] text-white">
+                "No sé si la terapia es para mí."
+              </h3>
+              <p class="text-white font-josefin font-light">
+                Es natural tener dudas, pero si sientes que necesitas un cambio,
+                la ​terapia puede ser ese espacio seguro donde explorar tus
+                emociones y ​aprender a gestionarlas. No necesitas estar en
+                crisis para beneficiarte ​de la terapia; es un camino hacia el
+                autoconocimiento y la paz ​interior.
+              </p>
+            </div>
+          </div>
+          <div class="w-[410px] flex flex-col">
+            <div>
+              <img
+                src="assets/images/sanar-servicios-3.webp"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="bg-tan-light pl-4 pr-3 pt-6 grow pb-8">
+              <h3 class="text-base font-medium mb-[10px] text-white">
+                "Es caro ¿y si no me lo puedo permitir?"
+              </h3>
+              <p class="text-white font-josefin font-light">
+                La terapia es una inversión en ti misma. El costo puede parecer
+                ​elevado, pero los beneficios son incalculables. Considera
+                cuánto ​tiempo has pasado sintiéndote atrapada y cuánto
+                valoraría una vida ​en la que te sientas empoderada y feliz.
+                Además, ofrecemos opciones ​de pago flexibles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lg:mb-[134px] mb-[70px]">
+        <div class="w-full px-[15px] lg:text-center mb-50px lg:mb-[30px]">
+          <h2 class="lg:text-3xl text-gray-light text-2xl mb-5">
+            Resuelvo tus preguntas más frecuentes
+          </h2>
+        </div>
+        <div
+          class="max-w-[1070px] mx-auto flex flex-col gap-y-8 lg:mb-[90px] px-[15px] lg:px-0 mb-12"
+        >
+          <details class="border-[1px] border-tan group" name="accordion">
+            <summary
+              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-7 cursor-pointer group-open:after:-rotate-45 after:transition-all py-6 px-4 pr-[75px] lg:pr-4 after:top-6 lg:after:top-auto"
+            >
+              ¿Puedo iniciar el taller y una vez finalizado hacer sesiones de
+              terapia individuales?
+            </summary>
+            <div class="py-6 px-4 pt-0">
+              <p class="font-josefin font-light text-base text-gray-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                dolorum provident porro distinctio ut odit eaque voluptatem
+                illum officiis delectus?
+              </p>
+            </div>
+          </details>
+          <details class="border-[1px] border-tan group" name="accordion">
+            <summary
+              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-7 cursor-pointer group-open:after:-rotate-45 after:transition-all py-6 px-4 pr-[75px] lg:pr-4 after:top-6 lg:after:top-auto"
+            >
+              ¿Puedo empezar con las sesiones de terapia y luego realizar el
+              taller?
+            </summary>
+            <div class="py-6 px-4 pt-0">
+              <p class="font-josefin font-light text-base text-gray-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                dolorum provident porro distinctio ut odit eaque voluptatem
+                illum officiis delectus?
+              </p>
+            </div>
+          </details>
+          <details class="border-[1px] border-tan group" name="accordion">
+            <summary
+              class="font-josefin text-xl font-light list-none text-gray-light after:content-[''] after:w-[30px] after:h-[30px] after:bg-[url('../assets/images/add.svg')] relative after:absolute after:right-7 cursor-pointer group-open:after:-rotate-45 after:transition-all py-6 px-4 pr-[75px] lg:pr-4 after:top-6 lg:after:top-auto"
+            >
+              ¿Las sesiones son individuales, en pareja o en grupo?
+            </summary>
+            <div class="py-6 px-4 pt-0">
+              <p class="font-josefin font-light text-base text-gray-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                dolorum provident porro distinctio ut odit eaque voluptatem
+                illum officiis delectus?
+              </p>
+            </div>
+          </details>
+        </div>
+        <div class="w-full text-center">
+          <h3 class="font-josefin font-light text-2xl mb-8 text-gray-light">
+            ¿Te has quedado con alguna duda sin resolver?
+          </h3>
+          <a
+            class="font-medium text-sm uppercase text-center block text-white py-2 bg-tan cursor-pointer text=gray-light lg:w-fit lg:px-5 lg:pt-[9px] lg:pb-[7px] w-fit px-5 hover:bg-tan-hover mx-auto"
+            >¡No dudes en contactarme!</a
+          >
+        </div>
+      </section>
+      <!-- testimonials -->
+      <section
+        class="text-center bg-[url('../assets/images/background-testimonial-mobile.webp')] pt-14 pb-[140px] bg-cover"
+      >
+        <div class="max-w-[345px] lg:max-w-none text-center mx-auto">
+          <h2 class="text-gray-light opacity-80 font-medium text-2xl mb-6">
+            Testimonios
+          </h2>
+          <h3 class="font-josefin font-light text-base text-gray-light mb-5">
+            Esto es lo que dicen algunas mujeres como tú...
+          </h3>
+        </div>
+
+        <div class="swiper swiper-mobile lg:hidden w-full h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center items-stretch h-auto">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col m-auto"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-stretch h-auto">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  No sabía cómo poner límites y siempre terminaba en relaciones
+                  tóxicas. El taller de autoestima me enseñó a reconocer mi
+                  valor y a no conformarme con menos de lo que merezco. Hoy, soy
+                  mi prioridad y no me siento culpable al establecer límites.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    A
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Ana, 29 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-stretch h-auto">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination-mobile relative mt-[30px]"></div>
+        </div>
+        <div
+          class="swiper swiper-desktop max-w-[1070px] hidden pb-[50px] lg:flex w-full h-full"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center tems-stretch h-auto">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto lg:w-[519px]"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center tems-stretch h-auto">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto lg:w-[519px]"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80 mb-2"
+                >
+                  Las sesiones con Rebeca han sido una de las mejores decisiones
+                  de mi vida. Llegué sintiéndome atrapada en patrones de
+                  dependencia emocional, pero con su orientación, he logrado
+                  liberarme y construir una nueva versión de mí misma. Rebeca me
+                  ha enseñado a establecer límites, a valorarme y, lo más
+                  importante, a ponerme a mí misma en primer lugar. Su apoyo ha
+                  sido fundamental para mi crecimiento personal y para conocer
+                  mi propio valor y no conformarme con menos.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Paula, 42 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center tems-stretch h-auto">
+              <div
+                class="bg-beige text-left w-[345px] pt-10 pl-4 pr-11 pb-7 flex flex-col mx-auto h-[430px] lg:w-[519px]"
+              >
+                <p
+                  class="font-josefin font-light text-sm text-gray-light opacity-80"
+                >
+                  No sabía cómo poner límites y siempre terminaba en relaciones
+                  tóxicas. El taller de autoestima me enseñó a reconocer mi
+                  valor y a no conformarme con menos de lo que merezco. Hoy, soy
+                  mi prioridad y no me siento culpable al establecer límites.
+                </p>
+
+                <div class="flex items-center gap-x-5 mt-auto mb-0">
+                  <div
+                    class="text-xl font-medium uppercase flex items-center justify-center w-[40px] h-[40px] bg-tan text-white"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-gray-light opacity-80">
+                      Ana, 29 años
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination bottom-0 pagination-desktop mt-[30px]"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <footer class="pb-3">
+      <section
+        class="bg-tan-light relative pt-[174px] px-[15px] lg:px-0 lg:pt-0 lg:grid lg:grid-cols-[5vw_auto_5vw] lg:grid-rows-[59px_auto_59px]"
+      >
+        <div
+          class="border border-t-0 border-l-0 border-white w-full hidden lg:block"
+        ></div>
+        <div
+          class="border-b border-t-0 border-white w-full hidden lg:block"
+        ></div>
+        <div
+          class="border-[1px] border-r-0 border-t-0 border-white w-full hidden lg:block"
+        ></div>
+
+        <div class="border-r border-white hidden lg:block"></div>
+        <div class="w-full lg:relative lg:px-[53px] lg:pt-4 lg:pb-10">
+          <img
+            class="w-[188px] h-auto absolute mx-auto left-0 right-0 -top-[103px] lg:w-[25vw] lg:max-w-[366px] lg:right-[92px] lg:-top-[169px] lg:left-auto"
+            src="assets/images/ipad.webp"
+          />
+
+          <div
+            class="text-center lg:w-[43vw] max-w-[631px] lg:text-left mx-auto lg:mx-0"
+          >
+            <div class="">
+              <h2 class="lg:text-3xl font-medium mb-5 text-2xl text-white">
+                Suscribete a la newsletter y recibe un pdf gratis
+              </h2>
+              <p
+                class="font-josefin lg:text-base text-sm text-white font-light mb-8"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt officiis magni quas quod vel corporis provident
+                dignissimos distinctio, consequatur ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-l border-white hidden lg:block"></div>
+        <div
+          class="border border-l-0 border-b-0 border-white w-full hidden lg:block"
+        ></div>
+        <div class="border-t border-white w-full hidden lg:block"></div>
+        <div
+          class="border border-r-0 border-b-0 border-white w-full hidden lg:block"
+        ></div>
+      </section>
+      <div class="px-[15px] w-full flex flex-col items-center pt-5">
+        <img
+          src="/src/assets/images/logo-minus.svg"
+          class="w-[54px] h-auto mb-[18px]"
+        />
+        <div class="flex w-full items-center">
+          <hr class="grow border-tan-light" />
+          <div class="flex gap-x-5 items-center ml-[22px] mr-[13px]">
+            <a
+              class="w-[25px] h-[25px] bg-[url('../assets/images/instagram.svg')] block"
+            >
+            </a>
+            <a class="flex">
+              <span class="material-symbols-outlined text-[34px] text-tan-light"
+                >mail</span
+              >
+            </a>
+          </div>
+          <hr class="grow border-tan-light" />
+        </div>
+        <div class="flex gap-5">
+          <a class="font-josefin font-light text-[14px] text-tan-light"
+            >Política de Privacidad</a
+          >
+          <a class="font-josefin font-light text-[14px] text-tan-light"
+            >Política de Privacidad</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
